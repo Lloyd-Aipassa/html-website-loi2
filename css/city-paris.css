@@ -1,9 +1,9 @@
 
-	article {
+	main {
 		background-color: aliceblue;
 	}
-
-	article h2 {
+	
+	main h2 {
 		margin-top: 30px;
 		margin-bottom: 10px;
 	}

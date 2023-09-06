@@ -1,12 +1,11 @@
+main {
+	background-color: aliceblue;
+}
 
-	article {
-		background-color: aliceblue;
-	}
-
-	article h2 {
-		margin-top: 30px;
-		margin-bottom: 10px;
-	}
+main h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
 
 	.city-card {
 		position: relative;
