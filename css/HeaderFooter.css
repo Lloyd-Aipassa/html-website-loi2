@@ -10,7 +10,7 @@
 	--main-color-blue: #85cdcb;
 	--main-color-dark-orange: #e27d60;
 	--main-color-orange: #e8a870;
-  }
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Montserrat:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600&display=swap");
 
@@ -50,7 +50,7 @@ a {
 	color: #1d1d1d;
 }
 
-nav a:hover{
+nav a:hover {
 	color: var(--main-color-dark-orange);
 }
 
@@ -99,7 +99,41 @@ nav li a {
 	color: black;
 }
 
-.mob-nav{
+.links-mobile{
+	display: none;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown button{
+	border: none;
+	background-color: #ffffff00;
+}
+.dropdown button:hover p{
+	color: var(--main-color-dark-orange);
+}
+.dropdown:hover .dropdown-menu{
+display: block;
+}
+
+.dropdown-menu {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 200px;
+	background-color: #fff;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.dropdown li {
+	padding: 15px 24px;
+	border-bottom: #c0c0c0 1px solid;
+}
+
+.mob-nav {
 	display: none;
 }
 
@@ -218,7 +252,7 @@ footer ul {
 footer .footer-social {
 	display: flex;
 	gap: 20px;
-	padding: 50px
+	padding: 50px;
 }
 
 footer .fa-brands {
@@ -240,20 +274,26 @@ footer .fa-brands {
 		line-height: 3.1rem;
 	}
 
-	header img{
+	header img {
 		width: 30%;
 	}
 
-	.mob-nav{
+	.mob-nav {
 		display: block;
 	}
 
-	.con{
+	.con {
 		margin-bottom: 40px;
 	}
 
+	.dropdown button{
+	display: none;
+	}
 
-	
+	.links-mobile{
+		display: block;
+	}
+
 	footer {
 		min-height: 40vh;
 		background-color: #1d1d1d;
@@ -283,7 +323,7 @@ footer .fa-brands {
 		z-index: 100;
 	}
 
-	footer nav li a{
+	footer nav li a {
 		padding: 0;
 	}
 }
@@ -355,12 +395,16 @@ footer .fa-brands {
 	color: #fff;
 }
 
-    /* Add CSS animation to the header */
-    header {
-		animation: fadeIn 1500ms;
-	  }
-	  /* Keyframe animation for the fade-in effect */
-	  @keyframes fadeIn {
-		from { opacity: 0; }
-		to { opacity: 1; }
-	  }
+/* Add CSS animation to the header */
+header {
+	animation: fadeIn 1500ms;
+}
+/* Keyframe animation for the fade-in effect */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

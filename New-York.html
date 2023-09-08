@@ -21,23 +21,23 @@
 		<nav>
 			<ul>
 				<li><a href="/">Home</a></li>
-				<li>
-					<a href="/New-York.html" style="
-								color: var(
-									--main-color-orange
-								);
-							">New York</a>
-				</li>
-				<li>
-					<a href="/Parijs.html">Parijs</a>
-				</li>
-				<li>
-					<a href="/Tokyo.html">Tokyo</a>
-				</li>
-				<li class="con">
-					<a href="/Contact.html">Contact</a>
-				</li>
-
+				<div class="dropdown">
+					<button>
+						<p>Steden</p>
+					</button>
+					<div class="dropdown-menu">
+						<li><a href="/New-York.html" style="color: var(--main-color-orange);">New York</a></li>
+						<li><a href="/Parijs.html">Parijs</a></li>
+						<li><a href="/Tokyo.html">Tokyo</a></li>
+					</div>
+				</div>
+				<div class="links-mobile">
+					<li><a href="/New-York.html" style="color: var(--main-color-orange);">New York</a></li>
+					<li><a href="/Parijs.html">Parijs</a></li>
+					<li><a href="/Tokyo.html">Tokyo</a></li>
+				</div>
+				<li><a href="/Contact.html">Contact</a></li>
+				<br><br>
 				<li class="mob-nav">
 					<a href="#History">Geschiedenis</a>
 				</li>
@@ -72,7 +72,6 @@
 
 		<section class="intro">
 			<h2>New York City</h2>
-
 			<p>
 				New York is de grootste en belangrijkste
 				stad in de Verenigde Staten van Amerika.

@@ -145,7 +145,7 @@
 		align-self: bottom;
 	}
 
-	@media (max-width: 1040px) {
+	@media (max-width: 1024px) {
 		.home-text {
 			display: grid;
 			grid-template-columns: 1fr;
