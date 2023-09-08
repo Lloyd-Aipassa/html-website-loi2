@@ -101,6 +101,8 @@ nav .desktop-menu {
 .dropdown button {
 	border: none;
 	background-color: #ffffff00;
+	font-size: 16px;
+	padding-top: 3px;
 }
 
 .dropdown-menu {
@@ -113,7 +115,7 @@ nav .desktop-menu {
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.dropdown button:hover p {
+.dropdown button:hover {
 	color: var(--main-color-dark-orange);
 }
 
