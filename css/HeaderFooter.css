@@ -88,6 +88,7 @@ header {
 nav .desktop-menu {
 	display: flex;
 	gap: 50px;
+	align-items: center;
 }
 
 .links-mobile {
@@ -102,7 +103,7 @@ nav .desktop-menu {
 	border: none;
 	background-color: #ffffff00;
 	font-size: 16px;
-	padding-top: 3px;
+	color: #1d1d1d;
 }
 
 .dropdown-menu {
