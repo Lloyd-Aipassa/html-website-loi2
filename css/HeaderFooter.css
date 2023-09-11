@@ -57,15 +57,20 @@ nav a:hover {
 /********Header*********/
 header {
 	position: relative;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	width: 100vw;
 	height: 10vh;
 	padding: 5px 120px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 	background-color: #fff;
 	z-index: 9999;
+}
+
+.header-container {
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
 }
 
 .logo {
@@ -125,7 +130,7 @@ nav .desktop-menu {
 	flex-direction: column;
 }
 
-.dropdown-menu a{
+.dropdown-menu a {
 	padding: 15px 24px;
 	border-bottom: #c0c0c0 1px solid;
 }
@@ -225,7 +230,7 @@ display: block;
 		left: 0;
 	}
 
-	nav .desktop-menu{
+	nav .desktop-menu {
 		display: none;
 	}
 

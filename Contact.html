@@ -19,40 +19,41 @@
 
 <body>
 	<header>
-		<a href="/" class="logo">
-			<img src="/images/logo.jpg" alt="logo">
-			<p>Visit me</p>
-		</a>
-
-		<nav>
-			<div class="desktop-menu">
-				<a href="/">Home</a>
-				<div class="dropdown">
-					<button>
-						Steden
-					</button>
-					<div class="dropdown-menu">
-						<a href="/New-York.html">New York</a>
-						<a href="/Parijs.html">Parijs</a>
-						<a href="/Tokyo.html">Tokyo</a>
+		<div class="header-container">
+			<a href="/" class="logo">
+				<img src="/images/logo.jpg" alt="logo">
+				<p>Visit me</p>
+			</a>
+			<nav>
+				<div class="desktop-menu">
+					<a href="/">Home</a>
+					<div class="dropdown">
+						<button>
+							Steden
+						</button>
+						<div class="dropdown-menu">
+							<a href="/New-York.html">New York</a>
+							<a href="/Parijs.html">Parijs</a>
+							<a href="/Tokyo.html">Tokyo</a>
+						</div>
 					</div>
+					<a href="/Contact.html" style="color: var(--main-color-orange);">Contact</a>
 				</div>
-				<a href="/Contact.html" style="color: var(--main-color-orange);">Contact</a>
-			</div>
 
-			<div class="hamburger-menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="mobile-menu">
-				<a href="/">Home</a>
-				<a href="/New-York.html">New York</a>
-				<a href="/Parijs.html">Parijs</a>
-				<a href="/Tokyo.html">Tokyo</a>
-				<a href="/Contact.html" style="color: var(--main-color-orange);">Contact</a>
-			</div>
-		</nav>
+				<div class="hamburger-menu">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="mobile-menu">
+					<a href="/">Home</a>
+					<a href="/New-York.html">New York</a>
+					<a href="/Parijs.html">Parijs</a>
+					<a href="/Tokyo.html">Tokyo</a>
+					<a href="/Contact.html" style="color: var(--main-color-orange);">Contact</a>
+				</div>
+			</nav>
+		</div>
 	</header>
 	<main>
 		<section class="banner">
@@ -78,10 +79,9 @@
 				<label>Phone
 					<input type="text" name="phone"></label>
 				<label>Message
-					<textarea name="message" required></textarea></label>
+					<textarea name="message" rows="8" cols="50" required></textarea></label>
 				<input type="submit" value="Send">
 			</form>
-
 			<div id="map"></div>
 		</section>
 	</main>
