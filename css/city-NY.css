@@ -1,25 +1,11 @@
 main {
-	background-color: aliceblue;
+	background-color: #fcf9f6;
 	padding-bottom: 10px;
 }
 
 main h2 {
 	margin-top: 30px;
 	margin-bottom: 10px;
-}
-
-.city-card {
-	position: relative;
-	background-color: #fff;
-	padding: 2% 5% 5% 5%;
-	max-width: 1200px;
-	margin: 0 auto;
-	margin-bottom: 50px;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.city-card p {
-	margin-bottom: 20px;
 }
 
 .banner {
@@ -71,29 +57,126 @@ main h2 {
 }
 
 .intro {
-	background-color: #fff;
-	margin: auto;
-	margin-bottom: 50px;
-	margin-top: -200px;
+	margin: 120px auto -100px;
 	max-width: 1200px;
-	padding: 5%;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.history img,
-.State-of-mind img,
-.Nicknames img {
-	width: 100%;
-	margin: 10px 0 20px 0;
-	border-radius: 8px;
-	box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-	box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-		rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+/********** History ********/
+
+#history {
+	background-color: #f3ece1;
+	height: 500px;
+	margin: 400px 0;
 }
 
-.history {
+#history .history-container {
 	display: grid;
-	grid-template-columns: 1fr;
+	grid-template-columns: 250px 550px 400px;
+	max-width: 1200px;
+	margin: -0 auto 0;
+	height: 100%;
+}
+
+#history .image-container {
+	align-self: center;
+	background-color: #fff;
+	padding: 10px;
+	align-self: center;
+	margin-right: -40px;
+	margin-bottom: -180px;
+	z-index: 7;
+}
+
+#history .image-container2 {
+	align-self: center;
+	height: 600px;
+	width: 100%;
+	width: 600px;
+	margin-top: -80px;
+}
+
+.image-container img,
+.image-container2 img {
+	width: 100%;
+	height: 100%;
+}
+.image-container2 img {
+	object-fit: cover;
+}
+.image-container img {
+	object-fit: contain;
+}
+
+#history .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	padding: 60px;
+	align-self: center;
+	margin-left: -100px;
+	margin-top: -100px;
+}
+
+#history .card-content h2 {
+	max-width: 320px;
+	line-height: 95%;
+	margin: 0 0 20px 0;
+}
+
+/********** State if mind **********/
+
+#state-of-mind {
+	background-color: #f3ece1;
+	height: 500px;
+	margin: 400px 0;
+}
+
+.state-of-mind-container {
+	display: grid;
+	grid-template-columns: 400px 1fr 250px;
+	max-width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+#state-of-mind .card-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: #fff;
+	padding: 60px;
+	align-self: center;
+	margin-right: -100px;
+	margin-bottom: -100px;
+	z-index: 5;
+}
+#state-of-mind .card-content h2 {
+	max-width: 320px;
+	line-height: 95%;
+	margin: 0 0 20px 0;
+}
+
+#state-of-mind .image-container2 {
+	height: 600px;
+	margin: 0;
+	margin-top: -80px;
+}
+
+#state-of-mind .image-container {
+
+	background-color: #fff;
+	padding: 10px;
+	align-self: center;
+	margin-top: -170px;
+	margin-left: -70px;
+	z-index: 7;
+}
+
+.intro2 {
+	margin: -300px auto -250px;
+	max-width: 1200px;
+	padding: 5% 0;
 }
 
 @media (max-width: 1440px) {
@@ -128,15 +211,54 @@ main h2 {
 }
 
 @media (max-width: 1040px) {
-	.intro,
-	.city-card {
-		position: relative;
-		background-color: #fff;
-		padding: 2% 5% 5% 5%;
+	#history {
+		background-color: #c9d6cc;
+		height: 450px;
+		margin-bottom: 200px;
+	}
 
-		margin: 20px;
-		margin-bottom: 50px;
-		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	.city-card p {
+		margin-bottom: 20px;
+	}
+
+	.history-container {
+		display: grid;
+		grid-template-columns: 1fr;
+		max-width: 1200px;
+		margin: 0 auto;
+		height: 570px;
+	}
+
+	.image-container {
+		background-color: #fff;
+		padding: 20px;
+		align-self: center;
+		width: 100%;
+		max-width: 750px;
+		margin: -110px -30px 0 -0px;
+	}
+
+	.image-container img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #fff;
+		padding: 60px;
+		align-self: center;
+		max-width: 510px;
+		margin-top: -120px;
+		margin-left: -30px;
+	}
+
+	.card-content h2 {
+		max-width: 320px;
+		line-height: 95%;
+		margin: 0 0 20px 0;
 	}
 
 	.intro {

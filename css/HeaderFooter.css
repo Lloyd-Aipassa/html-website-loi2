@@ -23,7 +23,7 @@ h1,
 h2,
 h3 {
 	font-family: "Montserrat", sans-serif;
-	color: #1d1d1d;
+	color: rgba(0, 0, 0, 0.75);
 }
 
 h1 {
@@ -47,7 +47,7 @@ a {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	text-decoration: none;
-	color: #1d1d1d;
+	color: rgba(0, 0, 0, 0.75);
 }
 
 nav a:hover {
