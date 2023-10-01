@@ -7,7 +7,7 @@
 }
 
 :root {
-	--main-color-blue: #85cdcb;
+	--main-color-blue: #f3ece1;
 	--main-color-dark-orange: #e27d60;
 	--main-color-orange: #e8a870;
 }
@@ -94,6 +94,10 @@ nav .desktop-menu {
 	display: flex;
 	gap: 50px;
 	align-items: center;
+}
+
+.mobiele-navigatie{
+	display: none;
 }
 
 .links-mobile {
