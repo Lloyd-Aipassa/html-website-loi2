@@ -1,5 +1,5 @@
 :root {
-	--main-color-orange: #FFEBDA;
+	--main-color-orange: #ffebda;
 	--bg: #fcf9f6;
 	--img: url("/images/NewYork/nyBanner2.webp");
 }
@@ -14,14 +14,13 @@ main h2 {
 	margin-bottom: 10px;
 }
 
-#new-york{
+#new-york {
 	width: 100%;
 	height: 90vh;
 	background-image: var(--img);
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: bottom;
-	
 }
 
 .hero {
@@ -31,15 +30,15 @@ main h2 {
 	display: grid;
 	grid-auto-columns: 1fr;
 	justify-items: center;
-	grid-template-areas:
-	 'one two';
+	grid-template-areas: "one two";
 	margin-bottom: 5%;
 	z-index: 2;
 }
 
 .hero p {
 	max-width: 550px;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),linear-gradient(#fff,#fff);
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
 	padding: 50px;
 	color: #000;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
@@ -55,24 +54,22 @@ main h2 {
 	grid-area: two;
 }
 
-
-
-
 /********** History ********/
 
 #history {
 	/* background-color: var(--main-color-orange); */
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),linear-gradient(#fbe8de,#fbe8de);
-	height: 100vh;
-	margin: 0;
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fbe8de, #fbe8de);
+	padding: 180px 0 220px;
 }
 
 #history .history-container {
 	display: grid;
 	grid-template-columns: 250px 450px 500px;
 	max-width: 1200px;
-	margin: -0 auto 0;
+	justify-content: center;
 	height: 100%;
+	margin: 0 auto;
 }
 
 #history .image-container {
@@ -113,7 +110,8 @@ main h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),linear-gradient(#fff,#fff);
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
 	color: #000;
 	padding: 60px;
 	align-self: center;
@@ -128,10 +126,6 @@ main h2 {
 	margin: 0 0 20px 0;
 }
 
-
-
-
-
 /********** bijnamen **********/
 
 #bijnamen {
@@ -139,24 +133,22 @@ main h2 {
 	padding: 5% 0;
 }
 
-#bijnamen p{
-	background-color:#fbe8de;
+#bijnamen p {
+	background-color: #fbe8de;
 	/* color: #000; */
 	max-width: 500px;
 	padding: 35px;
 }
 
-#bijnamen img{
+#bijnamen img {
 	max-width: 600px;
 }
-
-
-
 
 /********** State of mind **********/
 
 #state-of-mind {
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),linear-gradient(#e1eaf4,#e1eaf4);
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#e1eaf4, #e1eaf4);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -169,7 +161,7 @@ main h2 {
 	margin: 0 auto;
 	align-content: space-around;
 	max-width: 1200px;
-	height: 100%!important;
+	height: 100% !important;
 }
 
 #state-of-mind .card-content {
@@ -185,7 +177,7 @@ main h2 {
 	box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
 }
 
-#state-of-mind .card-content p{
+#state-of-mind .card-content p {
 	margin: 0;
 }
 #state-of-mind .card-content h2 {
@@ -213,7 +205,7 @@ main h2 {
 	z-index: 7;
 }
 
-#state-of-mind p{
+#state-of-mind p {
 	margin-bottom: 100px;
 	text-align: center;
 }
@@ -226,8 +218,6 @@ q {
 	font-style: italic;
 }
 
-
-
 /******************MUST SEE*****************/
 #Top-Attractions {
 	max-width: 1200px;
@@ -237,13 +227,13 @@ q {
 	grid-auto-columns: 1fr;
 	/* grid-auto-rows: auto; */
 	grid-template-areas:
-		'one one two three'
-		'one one two three'
-		'one one two three'
-		'four four two three'
-		'four four five five'
-		'four four five five'
-		/* grid-template-columns: repeat(4, 1fr);
+		"one one two three"
+		"one one two three"
+		"one one two three"
+		"four four two three"
+		"four four five five"
+		"four four five five";
+	/* grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: 1fr auto auto; */
 }
 
@@ -286,7 +276,6 @@ q {
 	grid-area: three;
 }
 
-
 .het-vrijheidsbeeld img,
 .empire-state img {
 	width: 100%;
@@ -299,8 +288,6 @@ q {
 .broadway {
 	grid-area: five;
 }
-
-
 
 @media (max-width: 1440px) {
 	.page-nav {
@@ -390,6 +377,17 @@ q {
 }
 
 @media (max-width: 768px) {
+	#new-york {
+		height: 100%;
+	}
+
+	.hero {
+		grid-template-areas:
+			"two"
+			"one";
+		padding: 100px 0;
+	}
+
 	.page-nav {
 		display: none;
 	}
@@ -397,11 +395,11 @@ q {
 	#Top-Attractions {
 		grid-auto-rows: auto;
 		grid-template-areas:
-			'one'
-			'two'
-			'three'
-			'four'
-			'five';
+			"one"
+			"two"
+			"three"
+			"four"
+			"five";
 	}
 }
 
