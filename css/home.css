@@ -127,13 +127,14 @@ section.cards h2 {
 	padding: 20px 20px 50px 20px;
 	text-align: center;
 	border-radius: 10px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .home-parijs {
-	background-color: var(--main-color-blue);
+	background-color: var(--main-color-green);
 }
 .home-japan {
-	background-color: var(--main-color-dark-orange);
+	background-color: var(--main-color-purple);
 }
 
 .home-new-york {
@@ -203,6 +204,7 @@ section.cards h2 {
 	.home-japan img,
 	.home-new-york img {
 		max-width: 300px;
+		object-fit: cover;
 	}
 
 	.home-cards-content {

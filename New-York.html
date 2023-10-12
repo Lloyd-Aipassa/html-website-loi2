@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<header>
+	<header id="header">
 		<div class="header-container">
 			<a href="/" class="logo">
 				<img src="/images/logo.jpg" alt="logo">
@@ -42,88 +42,54 @@
 				</div>
 			</nav>
 
-			<nav aria-label="navigatie-mobiel" class="mobiele-navigatie">
+			<nav class="mobiele-navigatie">
 				<div class="mobile-menu">
 					<a href="/">Home</a>
 					<a href="/New-York.html" style="color: var(--main-color-orange);">New York</a>
 					<a href="/Parijs.html">Parijs</a>
 					<a href="/Tokyo.html">Tokyo</a>
 					<a href="/Contact.html">Contact</a>
-					<br><br>
-					<a href="#History">Geschiedenis</a>
-					<a href="#state-of-mind">NY State of mind</a>
-					<a href="#Nicknames">Bijnamen</a>
-					<a href="#Top-Attractions">Top attracties</a>
-					<a href="#Where-to-Eat">Lekker eten</a>
-					<a href="#Things-to-Do">Wat te doen</a>
 				</div>
 			</nav>
 		</div>
 	</header>
-	<aside>
-		<ul class="page-nav" id="page-nav">
-			<li>
-				<a href="#history">Geschiedenis</a>
-			</li>
-			<li>
-				<a href="#state-of-mind">NY State of mind</a>
-			</li>
-			<li>
-				<a href="#Nicknames">Bijnamen</a>
-			</li>
-			<li>
-				<a href="#Top-Attractions">Top attracties</a>
-			</li>
-			<li>
-				<a href="#Where-to-Eat">Lekker eten</a>
-			</li>
-			<li>
-				<a href="#Things-to-Do">Wat te doen</a>
-			</li>
-		</ul>
-	</aside>
 
-	<main>
-		<section class="banner">
-			<h1>New York</h1>
-		</section>
+	<article aria-label="artikel over New York">
+		<header id="new-york">
+			<div class="hero">
+				<h1>New York</h1>
+				<p>
+					New York is de grootste en belangrijkste
+					stad in de Verenigde Staten van Amerika.
+					Ongeveer tien miljoen mensen wonen in
+					New York en iets meer dan tweeëntwintig
+					miljoen in de metropoolregio. Dit
+					plaatst New York op de lijst van de tien
+					grootste steden ter wereld. In veel
+					opzichten is New York een van de
+					belangrijkste steden ter wereld, of het
+					nu gaat om handel, financiën, kunst of
+					mode; New York is 'The place to be'.
+					Wanneer je door Manhattan loopt, merk je
+					alles op en besef je dat je in het
+					centrum van de wereld bent. De energie
+					die je voelt als je door Manhattan
+					loopt, is anders dan elke andere stad
+					ter wereld.
+					<br><br>
+					Manhattan is slechts een van de vijf
+					stadsdelen die New York vormen. De
+					andere zijn Brooklyn, Queens, Staten
+					Island en The Bronx. De andere
+					stadsdelen zijn veel minder bekend, maar
+					zijn nog steeds een bezoek waard. Wil je
+					meer informatie en leuke feitjes leren
+					over New York, lees dan snel verder!
+				</p>
+			</div>
+		</header>
 
-		<section class="intro">
-			<h2>Over New York</h2>
-			<p>
-				New York is de grootste en belangrijkste
-				stad in de Verenigde Staten van Amerika.
-				Ongeveer tien miljoen mensen wonen in
-				New York en iets meer dan tweeëntwintig
-				miljoen in de metropoolregio. Dit
-				plaatst New York op de lijst van de tien
-				grootste steden ter wereld. In veel
-				opzichten is New York een van de
-				belangrijkste steden ter wereld, of het
-				nu gaat om handel, financiën, kunst of
-				mode; New York is 'The place to be'.
-				Wanneer je door Manhattan loopt, merk je
-				alles op en besef je dat je in het
-				centrum van de wereld bent. De energie
-				die je voelt als je door Manhattan
-				loopt, is anders dan elke andere stad
-				ter wereld.
-			</p>
-			<br>
-			<p>
-				Manhattan is slechts een van de vijf
-				stadsdelen die New York vormen. De
-				andere zijn Brooklyn, Queens, Staten
-				Island en The Bronx. De andere
-				stadsdelen zijn veel minder bekend, maar
-				zijn nog steeds een bezoek waard. Een
-				bezoek aan New York is voor de meeste
-				toeristen een opeenstapeling van
-				hoogtepunten.
-			</p>
-		</section>
-
-		<section id="history" class="city-card">
+		<article aria-label="geschiedenis van New York" id="history" class="city-card">
 			<div class="history-container">
 				<div class="image-container">
 					<img src="/images/NewYork/NewYorkHistory2.webp" alt="Geschiedenis New York">
@@ -132,22 +98,25 @@
 					<img src="/images/NewYork/NYHistory.webp" alt="Geschiedenis New York">
 				</div>
 				<div class="card-content">
-					<h2>Geschiedenis van New York</h2>
+					<h2>Een korte geschiedenis van New York</h2>
 					<p>
-						Manhattan Island en andere delen van het huidige New York waren oorspronkelijk bewoond door de
-						Lenni-Lenape Indianen. Giovanni da Verrazzano was de eerste Europeaan die voet zette in dit
-						gebied. Één van de bruggen tussen Brooklyn en Staten Island is naar hem vernoemd. In 1624 kwamen
-						de
-						eerste Nederlanders naar het gebied waar zij hun eerste nederzettingen bouwden. Uit deze
-						Nederzettingen
-						ontstond New Amsterdam, dat in 1664 veroverd werd door de Britten die de stad hernoemd hadden
-						naar Ney York ter ere van de hertog van York.
+						Manhattan Island en andere delen van het huidige New York waren oorspronkelijk bewoond door
+						de Lenni-Lenape Indianen. Giovanni da Verrazzano was de eerste Europeaan die voet zette in dit
+						gebied. Één van de bruggen tussen Brooklyn en Staten Island is naar hem vernoemd. In 1624
+						kwamen de eerste Nederlanders naar het gebied waar zij hun eerste nederzettingen bouwden. Uit
+						deze
+						Nederzettingen ontstond New Amsterdam, dat in 1664 veroverd werd door de Britten die de stad
+						hernoemd
+						hadden naar Ney York ter ere van de hertog van York.
 					</p>
 				</div>
 			</div>
-		</section>
+		</article>
 
-		<section id="Nicknames">
+		<article aria-label="Bijnamen van New York" id="bijnamen">
+			<div class="image-container">
+				<img src="/images/NewYork/nyApple.webp" alt="Geschiedenis New York">
+			</div>
 			<h2>Bijnamen</h2>
 			<p>
 				New York heeft veel bijnamen. De meest
@@ -157,7 +126,7 @@
 				Fitzgerald die deze bijnaam regelmatig
 				gebruikte. De wereldwijde bekendheid van
 				deze bijnaam is te danken aan de
-				reclamecampagne 'I ♥ NY' die tijdens hun
+				reclamecampagne 'I &#9829; NY' die tijdens hun
 				campagne een appel gebruikte. Een andere
 				bekende bijnaam van New York is "The
 				City That Never Sleeps". Deze bijnaam
@@ -168,9 +137,10 @@
 				City", die voornamelijk wordt gebruikt
 				om de omvang van New York aan te duiden.
 			</p>
-		</section>
+		</article>
 
-		<section id="state-of-mind" class="city-card">
+		<article aria-label="New York State of mind" id="state-of-mind" class="city-card">
+			<p><q cite="https://www.azquotes.com/quote/810055">I'm in a New York state of mind</q><br>-Billy Joel-</p>
 			<div class="state-of-mind-container">
 				<div class="card-content">
 					<h2>NY State of mind</h2>
@@ -201,464 +171,142 @@
 				<div class="image-container">
 					<img src="/images/NewYork/NYSTATEOFMIND2.webp" alt="Geschiedenis New York">
 				</div>
-			</div>
-		</section>
 
-		<section class="city-card">
-			<h2 id="Top-Attractions">
-				Top topattracties in New York City
-			</h2>
-			<p>
-				De topattracties van New York City zijn
-				onder andere het Empire State Building,
-				Central Park, het Vrijheidsbeeld, het
-				Metropolitan Museum of Art en Broadway
-				shows. Deze iconische
-				bezienswaardigheden en culturele
-				instellingen bieden voor ieder wat wils
-				en mogen niet gemist worden.
-			</p>
-			<button class="accordion">
-				Empire State Building
-			</button>
-			<div class="panel">
-				<p>
-					Het Empire State Building is een
-					iconische wolkenkrabber in New
-					York City, Verenigde Staten. Het
-					werd voltooid in 1931 en heeft
-					102 verdiepingen, waardoor het
-					destijds het hoogste gebouw ter
-					wereld was. Het staat in Midtown
-					Manhattan en is een symbool
-					geworden van de stad, dat vaak
-					voorkomt in talloze films en
-					tv-shows. Het gebouw is nu een
-					populaire toeristische
-					attractie, met een observatiedek
-					op de 86e verdieping dat een
-					prachtig uitzicht biedt op de
-					stad.
-				</p>
 			</div>
-			<button class="accordion">Central Park</button>
-			<div class="panel">
-				<p>
-					Central Park is een groot
-					openbaar park in New York City,
-					Verenigde Staten. Het bevindt
-					zich in het centrum van
-					Manhattan en beslaat een
-					oppervlakte van 843 hectare.
-					Central Park is een populaire
-					bestemming voor zowel toeristen
-					als lokale bewoners, met tal van
-					attracties, waaronder de Central
-					Park Zoo, het Belvedere Castle
-					en het Strawberry Fields
-					monument ter nagedachtenis aan
-					John Lennon. Het park biedt ook
-					een verscheidenheid aan
-					recreatieve activiteiten, zoals
-					hardlopen, fietsen en varen.
-				</p>
-			</div>
-			<button class="accordion">
-				Het Vrijheidsbeeld
-			</button>
-			<div class="panel">
-				<p>
-					Het Vrijheidsbeeld is een
-					iconisch symbool van vrijheid en
-					democratie, gelegen op Liberty
-					Island in de haven van New York.
-					Het beeld, een geschenk van
-					Frankrijk aan de Verenigde
-					Staten, is ontworpen door de
-					Franse beeldhouwer Frédéric
-					Auguste Bartholdi en voltooid in
-					1886. Het staat op een hoogte
-					van 151 voet en vertegenwoordigt
-					de Romeinse godin van vrijheid,
-					Libertas. Het Vrijheidsbeeld is
-					een populaire toeristische
-					bestemming en wordt elk jaar
-					door miljoenen mensen bezocht.
-				</p>
-			</div>
-			<button class="accordion">Broadway</button>
-			<div class="panel">
-				<p>
-					Broadway is een straat in New
-					York City, Verenigde Staten,
-					bekend om zijn theaters en
-					entertainmentlocaties. Het is de
-					oudste noord-zuid hoofdweg in de
-					stad en strekt zich uit van
-					Lower Manhattan tot de Bronx.
-					Veel theaters aan Broadway
-					bieden plaats aan toneelstukken
-					en musicals, en de straat staat
-					bekend als de "Great White Way"
-					vanwege de vele verlichte
-					billboards en advertenties die
-					erlangs staan. Broadway is een
-					belangrijke toeristische
-					bestemming en herbergt enkele
-					van de meest beroemde theaters
-					ter wereld.
-				</p>
-			</div>
-		</section>
 
-		<section class="city-card">
-			<h2 id="Where-to-Eat">
-				Lekker eten in New York City
-			</h2>
-			<p>
-				Waar te eten in New York City New York
-				City herbergt enkele van de beste
-				restaurants ter wereld. Van
-				gastronomische gerechten tot streetfood,
-				je vindt elke denkbare keuken in de
-				stad. Hier zijn een paar restaurants die
-				je zeker moet proberen:
-			</p>
-			<button class="accordion2">
-				Peter Luger Steakhouse
-			</button>
-			<div class="panel2">
-				<p>
-					Peter Luger Steakhouse is een
-					restaurant voor fijnproevers in
-					Brooklyn, New York, Verenigde
-					Staten. Het staat bekend om zijn
-					hoogwaardige steaks die ter
-					plaatse worden gerijpt en op een
-					houtgestookte grill worden
-					gegrild. Het restaurant heeft
-					talloze onderscheidingen
-					ontvangen, waaronder de titel
-					"beste steakhouse van het land"
-					van de Zagat Survey en de James
-					Beard Foundation. Naast steaks
-					staat Peter Luger Steakhouse ook
-					bekend om zijn visgerechten,
-					waaronder kreeft en oesters, en
-					zijn uitgebreide wijnkaart. Het
-					restaurant heeft een informele
-					sfeer en is populair bij zowel
-					toeristen als de lokale
-					bevolking.
-				</p>
-			</div>
-			<button class="accordion2">
-				Katz's Delicatessen
-			</button>
-			<div class="panel2">
-				<p>
-					Katz's Delicatessen is een New
-					Yorkse instelling en een
-					populaire toeristische
-					bestemming, bekend om zijn
-					klassieke deli-sandwiches en
-					traditionele Joodse
-					comfortgerechten. De deli, die
-					sinds 1888 in bedrijf is, is
-					gelegen aan de Lower East Side
-					van Manhattan en staat bekend om
-					zijn pastrami on rye, corned
-					beef en andere geconserveerde
-					vleessoorten. Naast sandwiches
-					serveert Katz's Delicatessen ook
-					een verscheidenheid aan
-					bijgerechten, zoals latkes,
-					knishes en kasha varnishkes,
-					evenals soepen en salades. De
-					deli is ook beroemd om zijn
-					"I'll have what she's having"
-					scène in de romantische komedie
-					uit 1989 When Harry Met Sally.
-				</p>
-			</div>
-			<button class="accordion2">
-				Momofuku Noodle Bar
-			</button>
-			<div class="panel2">
-				<p>
-					Momofuku Noodle Bar is een
-					populaire restaurant in New York
-					City, bekend om zijn innovatieve
-					en heerlijke
-					Aziatisch-geïnspireerde keuken.
-					Het restaurant, opgericht door
-					chef-kok David Chang, is
-					gevestigd in de wijk East
-					Village in Manhattan en staat
-					bekend om zijn noedels,
-					dumplings en andere gerechten.
-					Het menu bij Momofuku Noodle Bar
-					verandert regelmatig en biedt
-					een mix van traditionele en
-					moderne gerechten, zoals
-					varkensbroodjes, pittige
-					kippenvleugels en pittige
-					tonijntartaar. Het restaurant
-					heeft een informele sfeer en is
-					populair bij fijnproevers en
-					lokale bewoners.
-				</p>
-			</div>
-			<button class="accordion2">Le Bernardin</button>
-			<div class="panel2">
-				<p>
-					Le Bernardin is een
-					wereldberoemd restaurant voor
-					fijne visgerechten in New York
-					City. Het wordt beheerd door
-					chef-kok Eric Ripert en heeft
-					talloze onderscheidingen
-					ontvangen, waaronder drie
-					Michelin-sterren en vier sterren
-					van The New York Times. Het
-					restaurant staat bekend om zijn
-					innovatieve en verfijnde
-					visgerechten, die worden bereid
-					met de meest verse en
-					hoogwaardige ingrediënten. Le
-					Bernardin heeft een formele
-					sfeer en is een populaire
-					bestemming voor speciale
-					gelegenheden en zakendiners. Het
-					is gelegen in Midtown Manhattan
-					en heeft een zusterrestaurant in
-					Parijs.
-				</p>
-			</div>
-			<button class="accordion2">
-				Di Fara Pizza
-			</button>
-			<div class="panel2">
-				<p>
-					Di Fara Pizza is een pizzeria
-					gelegen in de wijk Midwood in
-					Brooklyn. Het staat bekend om
-					zijn hoogwaardige, houtgestookte
-					pizza's, die worden gemaakt met
-					verse ingrediënten en belegd met
-					verschillende toppings. Het
-					restaurant werd opgericht in
-					1964 door de Italiaanse
-					immigrant Domenico De Marco, die
-					op 87-jarige leeftijd nog steeds
-					de hoofdpizzamaker is. Di Fara
-					Pizza heeft een toegewijde
-					aanhang en is geprezen door
-					foodcritici vanwege zijn
-					heerlijke pizza's. Het
-					restaurant is klein en heeft
-					vaak een lange wachttijd voor
-					een tafel, maar veel klanten
-					vinden dat de pizza's het
-					wachten waard zijn.
-				</p>
-			</div>
-		</section>
+		</article>
 
-		<section class="city-card">
-			<h2 id="Things-to-Do">
-				Dingen om 's nachts te doen in New York
-				City
-			</h2>
-			<p>
-				New York City staat bekend om zijn
-				nachtleven en er is altijd wel iets te
-				beleven, ongeacht de dag van de week.
-				Van livemuziek tot comedyclubs tot
-				dakterrasbars, hier zijn een paar
-				manieren om te genieten van de stad na
-				het vallen van de avond:
-			</p>
-			<button class="accordion3">
-				Pak een show on Broadway
-			</button>
-			<div class="panel3">
-				<p>
-					Broadway-shows zijn
-					live-uitvoeringen van
-					toneelstukken, musicals en
-					andere producties die
-					plaatsvinden in professionele
-					theaters in het Theater District
-					van New York City.
-					Broadway-shows staan bekend om
-					hun hoogwaardige optredens,
-					getalenteerde cast en
-					uitgebreide sets en kostuums.
-					Veel Broadway-shows zijn
-					gebaseerd op populaire films,
-					boeken of andere werken en
-					bevatten vaak bekende acteurs en
-					actrices. Broadway-shows zijn
-					een populaire toeristische
-					attractie in New York City en
-					worden elk jaar bezocht door
-					miljoenen mensen.
-				</p>
-			</div>
-			<button class="accordion3">
-				Pak een concert aan één van de vele
-				muziek venues
-			</button>
-			<div class="panel3">
-				<p>
-					New York City heeft een grote
-					verscheidenheid aan
-					muzieklocaties, variërend van
-					kleine clubs tot grote arena's.
-					Enkele van de meest bekende
-					muzieklocaties van de stad zijn
-					Madison Square Garden, Radio
-					City Music Hall en Barclays
-					Center. Deze locaties
-					organiseren een scala aan
-					muziekacts, van pop en rock tot
-					hiphop en jazz. Naast deze
-					grotere locaties is de stad ook
-					de thuisbasis van een aantal
-					kleinere clubs en
-					muzieklocaties, zoals de Bowery
-					Ballroom, de Mercury Lounge en
-					de Brooklyn Bowl. Deze kleinere
-					locaties bieden vaak
-					aanstormende artiesten en zorgen
-					voor een intiemere
-					concertbeleving.
-				</p>
-			</div>
-			<button class="accordion3">
-				Neem een drankje op een rooftop bar met
-				uitzicht over de city skyline
-			</button>
-			<div class="panel3">
-				<p>
-					New York City heeft een aantal
-					dakterrasbars, die populaire
-					bestemmingen zijn voor zowel
-					toeristen als locals. Deze bars,
-					gelegen op de bovenste
-					verdiepingen van hotels,
-					restaurants en andere gebouwen,
-					bieden een panoramisch uitzicht
-					op de stad en een ontspannen,
-					chique sfeer. Enkele van de
-					beste dakterrasbars in de stad
-					zijn The Roof at Park South, The
-					Press Lounge en The Top of the
-					Strand. Deze bars hebben vaak
-					een dresscode en vereisen
-					mogelijk een reservering, dus
-					het is raadzaam om van tevoren
-					te controleren. Dakterrasbars
-					zijn vooral populair in de
-					warmere maanden, wanneer gasten
-					kunnen genieten van het uitzicht
-					en de buitenlucht.
-				</p>
-			</div>
-			<button class="accordion3">
-				Catch a stand-up comedy show at the
-				Comedy Cellar
-			</button>
-			<div class="panel3">
-				<p>
-					New York City is een mekka voor
-					stand-up comedy, met tal van
-					comedy clubs en locaties die
-					stand-up optredens bieden.
-					Enkele van de beste stand-up
-					shows in de stad zijn te vinden
-					in clubs zoals de Comedy Cellar,
-					de Gotham Comedy Club en de
-					Stand. Deze clubs bieden een mix
-					van gevestigde comedians en
-					opkomend talent, en bieden een
-					verscheidenheid aan shows en
-					formats, waaronder open mics,
-					improvisatie en sketch comedy.
-					Andere populaire stand-up
-					locaties in de stad zijn
-					Carolines on Broadway en het UCB
-					Theatre.
-				</p>
-			</div>
-			<button class="accordion3">
-				Dance the night away in een club
-			</button>
-			<div class="panel3">
-				<p>
-					New York City heeft een
-					bruisende nachtclubscene, met
-					tal van clubs en bars verspreid
-					over de stad. Deze locaties
-					variëren van kleine, intieme
-					clubs tot grote, extravagante
-					dansclubs en bieden een breed
-					scala aan muziek en
-					entertainment. De stad staat
-					bekend om haar diverse
-					uitgaansleven en er zijn clubs
-					en bars voor alle smaken, van
-					hiphop en elektronische
-					dansmuziek tot jazz en
-					livemuziek. New Yorks
-					nachtclubscene is vooral
-					populair bij toeristen, die van
-					over de hele wereld komen om te
-					genieten van het bruisende
-					nachtleven van de stad.
-				</p>
-			</div>
-		</section>
-	</main>
+
+		<article id="Top-Attractions">
+			<header class="must-see">
+				<img src="/images/NewYork/nyBanner.webp" alt="">
+				<div class="content-container">
+					<h2>
+						Vier plekken in New York City die je gezien moet hebben
+					</h2>
+					<p>
+						Ga je naar New York City, dan zijn er vier plekken die gezien moet hebben:
+						het Empire State Building,
+						Central Park, het Vrijheidsbeeld, het
+						Metropolitan Museum of Art en Broadway
+						shows. Deze mooie bezienswaardigheden en culturele
+						instellingen zijn leuk voor iedereen en mogen niet gemist worden na een trip in New York.
+					</p>
+				</div>
+			</header>
+
+			<article class="empire-state">
+				<div class="content-container">
+					<h3>Empire State Building</h3>
+					<p>
+						Het Empire State Building is een
+						iconische wolkenkrabber in New
+						York City, Verenigde Staten. Het
+						werd voltooid in 1931 en heeft
+						102 verdiepingen, waardoor het
+						destijds het hoogste gebouw ter
+						wereld was. Het staat in Midtown
+						Manhattan en is een symbool
+						geworden van de stad, dat vaak
+						voorkomt in talloze films en
+						tv-shows. Het gebouw is nu een
+						populaire toeristische
+						attractie, met een observatiedek
+						op de 86e verdieping dat een
+						prachtig uitzicht biedt op de
+						stad.
+					</p>
+				</div>
+				<img src="/images/NewYork/ladylib.webp" alt="het Vrijheidsbeeld">
+			</article>
+
+			<article class="het-vrijheidsbeeld">
+				<img src="/images/NewYork/ladylib.webp" alt="het Vrijheidsbeeld">
+				<div class="content-container">
+					<h3>Het Vrijheidsbeeld</h3>
+					<p>
+						Het Vrijheidsbeeld is een
+						iconisch symbool van vrijheid en
+						democratie, gelegen op Liberty
+						Island in de haven van New York.
+						Het beeld, een geschenk van
+						Frankrijk aan de Verenigde
+						Staten, is ontworpen door de
+						Franse beeldhouwer Frédéric
+						Auguste Bartholdi en voltooid in
+						1886. Het staat op een hoogte
+						van 151 voet en vertegenwoordigt
+						de Romeinse godin van vrijheid,
+						Libertas. Het Vrijheidsbeeld is
+						een populaire toeristische
+						bestemming en wordt elk jaar
+						door miljoenen mensen bezocht.
+					</p>
+				</div>
+			</article>
+
+			<article class="central-park">
+				<div class="content-container">
+					<h3>Central Park</h3>
+					<p>
+						Central Park is een groot
+						openbaar park in New York City,
+						Verenigde Staten. Het bevindt
+						zich in het centrum van
+						Manhattan en beslaat een
+						oppervlakte van 843 hectare.
+						Central Park is een populaire
+						bestemming voor zowel toeristen
+						als lokale bewoners, met tal van
+						attracties, waaronder de Central
+						Park Zoo, het Belvedere Castle
+						en het Strawberry Fields
+						monument ter nagedachtenis aan
+						John Lennon. Het park biedt ook
+						een verscheidenheid aan
+						recreatieve activiteiten, zoals
+						hardlopen, fietsen en varen.
+					</p>
+				</div>
+			</article>
+			<article class="broadway">
+				<div class="content-container">
+					<h3>Broadway</h3>
+					<p>
+						Broadway is een straat in New
+						York City, Verenigde Staten,
+						bekend om zijn theaters en
+						entertainmentlocaties. Het is de
+						oudste noord-zuid hoofdweg in de
+						stad en strekt zich uit van
+						Lower Manhattan tot de Bronx.
+						Veel theaters aan Broadway
+						bieden plaats aan toneelstukken
+						en musicals, en de straat staat
+						bekend als de "Great White Way"
+						vanwege de vele verlichte
+						billboards en advertenties die
+						erlangs staan. Broadway is een
+						belangrijke toeristische
+						bestemming en herbergt enkele
+						van de meest beroemde theaters
+						ter wereld.
+					</p>
+				</div>
+			</article>
+		</article>
+	</article>
 
 	<footer>
-		<div class="adres-footer">
-			<p>
-				<span><b>Adres</b></span><br>
-				Europaplein 24,<br>
-				1078 GZ<br>
-				Amsterdam
-			</p>
-		</div>
-		<div class="footer-social">
-			<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-xl"></i>
-			</a>
-			<a href="https://nl-nl.facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
-			<a href="https://twitter.com/?lang=nl/"><i class="fa-brands fa-twitter fa-xl"></i></a>
-			<a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-xl"></i></a>
-		</div>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li>
-					<a href="/New-York.html">New York</a>
-				</li>
-				<li>
-					<a href="/Parijs.html">Parijs</a>
-				</li>
-				<li>
-					<a href="/Tokyo.html">Tokyo</a>
-				</li>
-				<li>
-					<a href="/Contact.html">Contact</a>
-				</li>
-			</ul>
-		</nav>
+		<footer>
+			<p>&copy; <span id="currentYear"></span> Visit me. All rights reserved.</p>
+		</footer>
 	</footer>
 
-	<script src="/javascript/accordion.js"></script>
-	<script src="/javascript/navigatieZichtbaar.js"></script>
+	<script>
+		// JavaScript code to dynamically update the current year
+		document.getElementById("currentYear").textContent = new Date().getFullYear();
+	</script>
 	<script src="/javascript/hamburger.js"></script>
 </body>
 

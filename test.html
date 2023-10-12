@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <article aria-label="Bijnamen van New York" id="Nicknames">
+        <div class="div1">
+            <h2>Bijnamen</h2>
+			<p>
+				New York heeft veel bijnamen. De meest
+				bekende bijnaam van de stad is
+				waarschijnlijk "The Big Apple". De stad
+				dankt deze bijnaam aan journalist John
+				Fitzgerald die deze bijnaam regelmatig
+				gebruikte. De wereldwijde bekendheid van
+				deze bijnaam is te danken aan de
+				reclamecampagne 'I &#10084; NY' die tijdens hun
+				campagne een appel gebruikte. Een andere
+				bekende bijnaam van New York is "The
+				City That Never Sleeps". Deze bijnaam
+				dankt zijn faam vooral aan de film "New
+				York, New York" met het gelijknamige
+				nummer gezongen door Frank Sinatra. Een
+				andere bekende bijnaam is "The Empire
+				City", die voornamelijk wordt gebruikt
+				om de omvang van New York aan te duiden.
+			</p>    
+        </div>
+        <div class="div3"> <img src="/images/NewYork/nyApple.webp" alt=""> </div>
+        <div class="div2"> <img src="/images/NewYork/bigApple.webp" alt=""> </div>
+    </article>
+
+</body>
+
+</html>
+
+<style>
+    .div1 {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: #fff;
+        z-index: 5;
+        padding: 50px;
+        margin-top: -15px;
+    }
+
+    .div2 {
+        background-color: red;
+        z-index: 3;
+    }
+
+    .div2 img,
+    .div3 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    .div3 {
+        background-color: black;
+    }
+
+    #Nicknames {
+        margin: 100px auto 100px;
+        max-width: 1200px;
+        gap: 15px;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        /* grid-column-gap: 0px;
+        grid-row-gap: 0px; */
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 2 / 4;
+    }
+
+    .div2 {
+        grid-area: 1 / 3 / 4 / 5;
+    }
+
+    .div3 {
+        grid-area: 2 / 2 / 3 / 3;
+    }
+</style>
