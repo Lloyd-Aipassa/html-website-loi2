@@ -60,7 +60,7 @@ main h2 {
 	/* background-color: var(--main-color-orange); */
 	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
 		linear-gradient(#fbe8de, #fbe8de);
-	padding: 180px 0 220px;
+	padding: 250px 0 180px;
 }
 
 p.quote-history{
