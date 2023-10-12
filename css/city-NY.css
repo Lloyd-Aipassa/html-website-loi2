@@ -334,59 +334,7 @@ q {
 }
 
 @media (max-width: 1040px) {
-	#history {
-		background-color: #c9d6cc;
-		height: 450px;
-		margin-bottom: 200px;
-	}
 
-	.city-card p {
-		margin-bottom: 20px;
-	}
-
-	.history-container {
-		display: grid;
-		grid-template-columns: 1fr;
-		max-width: 1200px;
-		margin: 0 auto;
-		height: 570px;
-	}
-
-	.image-container {
-		background-color: #fff;
-		padding: 20px;
-		align-self: center;
-		width: 100%;
-		max-width: 750px;
-		margin: -110px -30px 0 -0px;
-	}
-
-	.image-container img {
-		width: 100%;
-		height: 100%;
-	}
-
-	.card-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		background-color: #fff;
-		padding: 60px;
-		align-self: center;
-		max-width: 510px;
-		margin-top: -120px;
-		margin-left: -30px;
-	}
-
-	.card-content h2 {
-		max-width: 320px;
-		line-height: 95%;
-		margin: 0 0 20px 0;
-	}
-
-	.intro {
-		margin-top: -50px;
-	}
 }
 
 @media (max-width: 768px) {
@@ -401,8 +349,43 @@ q {
 		padding: 100px 0;
 	}
 
-	.page-nav {
-		display: none;
+	#history {
+		/* background-color: var(--main-color-orange); */
+		background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+			linear-gradient(#fbe8de, #fbe8de);
+		padding: 24px;
+	}
+
+	#history .history-container {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+
+	#history .image-container {
+	display: none;
+	}
+	
+	#history .image-container2 {
+		align-self: center;
+		height: 100%;
+		width: 100%;
+		margin: 0;
+		background-color: #fff;
+		padding: 10px;
+	}
+
+	#history .card-content {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+			linear-gradient(#fff, #fff);
+		color: #000;
+		padding: 20px;
+		align-items: center;
+		margin: 0;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	}
 
 	#Top-Attractions {
