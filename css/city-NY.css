@@ -134,13 +134,21 @@ p.quote-history{
 /********** bijnamen **********/
 
 #bijnamen {
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
+	padding: 250px 0 180px;
+}
+
+#bijnamen .bijnamen-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 auto;
 	max-width: 1200px;
-	padding: 5% 0;
 }
 
 #bijnamen p {
-	background-color: #fbe8de;
-	/* color: #000; */
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fbe8de, #fbe8de);
 	max-width: 500px;
 	padding: 35px;
 }
