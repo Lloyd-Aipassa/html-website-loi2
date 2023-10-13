@@ -503,7 +503,11 @@ q {
 	text-align: center;
 }
 
-q {
+#state-of-mind p.quote-state-of-mind{
+	margin-bottom: 35px;
+}
+
+#q {
 	text-align: center;
 	font-family: "Poppins", sans-serif;
 	font-size: 20px;
