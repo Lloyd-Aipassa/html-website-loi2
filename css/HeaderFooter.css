@@ -223,7 +223,6 @@ footer {
 header #header {
 	position: relative;
 	width: 100vw;
-	height: 150vh;
 	padding: 5px 120px;
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 	background-color: #fff;
@@ -236,7 +235,7 @@ header #header {
 	justify-content: space-between;
 	align-items: center;
 	margin: auto;
-	height: 50px;
+	height: 10vh;
 }
 
 .logo {
@@ -295,7 +294,7 @@ header nav .mobile-menu {
 	flex-direction: column;
 	gap: 10px;
 	align-self: flex-end;
-	height: 100vh;
+	height: 90vh;
 	transition: all 500ms;
 	z-index: 1000;
 	width: 80%;
@@ -305,7 +304,7 @@ header nav .mobile-menu {
 }
 header nav .mobile-menu.show {
 	transform: translatex(0%);
-	height: 100vh;
+	height: 90vh;
 	position: fixed;
 	top: 5vh;
 	bottom: 0;
