@@ -265,12 +265,8 @@ nav .desktop-menu {
 }
 
 
-.mobile-menu {
 
-
-}
-
-header nav .mobile-menu {
+/* header nav .mobile-menu {
 	display: block;
 	
 	opacity: 0;
@@ -280,13 +276,14 @@ header nav .mobile-menu {
 	left: 0;
 	transition: all 800ms;
 	z-index: 99999;
-}
+} */
 
 header nav .mobile-menu {
-	transform: translatex(-100%);
+	transform: translatex(0);
 	position: fixed;
-	top: 5vh;
+	
 	bottom: 0;
+	left: 0;
 	opacity: 1;
 	padding: 30px;
 	background-color: #ffffffb7;
@@ -303,11 +300,12 @@ header nav .mobile-menu {
 	-webkit-backdrop-filter: blur(5px);
 }
 header nav .mobile-menu.show {
-	transform: translatex(0%);
+	transform: translatex(-100%);
 	height: 90vh;
 	position: fixed;
-	top: 5vh;
+	
 	bottom: 0;
+	left: 0;
 	opacity: 1;
 	padding: 30px;
 	background-color: #ffffffb7;
