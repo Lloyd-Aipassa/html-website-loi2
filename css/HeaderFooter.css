@@ -55,7 +55,7 @@ nav a:hover {
 }
 
 /********Header*********/
-#header {
+header #header {
 	position: relative;
 	width: 100vw;
 	height: 10vh;
@@ -101,9 +101,6 @@ nav .desktop-menu {
 	display: none;
 }
 
-.links-mobile {
-	display: none;
-}
 
 .dropdown {
 	position: relative;
@@ -150,7 +147,7 @@ nav .desktop-menu {
 }
 
 .hamburger-menu span {
-	display: none;
+	display: block;
 }
 
 /* nav ul {
@@ -214,65 +211,173 @@ display: block;
 	display: none;
 } */
 
-@media (max-width: 1040px) {
-	.hamburger-menu {
-		position: absolute;
-		top: 50%;
-		transform: translatey(-50%);
-		right: 50px;
-	}
-	.hamburger-menu span {
-		display: block;
-		width: 30px;
-		height: 3px;
-		background-color: #000;
-		margin: 5px 0;
-	}
+footer {
+	min-height: 0vh;
 
-	header {
+	text-align: center;
+}
+
+@media (max-width: 1040px) {
+
+	/********Header*********/
+header #header {
+	position: relative;
+	width: 100vw;
+	height: 150vh;
+	padding: 5px 120px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	background-color: #fff;
+	z-index: 9999;
+}
+
+.header-container {
+	max-width: 1200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	height: 50px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+}
+
+.logo p {
+	font-family: "Cabin Sketch", cursive;
+	text-decoration: none;
+	margin-left: -16px;
+}
+
+.logo a {
+	display: block;
+	width: 130px;
+	height: 100%;
+}
+
+nav .desktop-menu {
+	display: none;
+}
+
+.mobiele-navigatie{
+	display: block;
+}
+
+
+.mobile-menu {
+
+
+}
+
+header nav .mobile-menu {
+	display: block;
+	
+	opacity: 0;
+	position: absolute;
+	top: 10vh;
+	padding: 50px;
+	left: 0;
+	transition: all 800ms;
+	z-index: 99999;
+}
+
+header nav .mobile-menu {
+	transform: translatex(-100%);
+	position: fixed;
+	top: 5vh;
+	bottom: 0;
+	opacity: 1;
+	padding: 30px;
+	background-color: #ffffffb7;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-self: flex-end;
+	height: 100vh;
+	transition: all 500ms;
+	z-index: 1000;
+	width: 80%;
+	transition: all 800ms;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+header nav .mobile-menu.show {
+	transform: translatex(0%);
+	height: 100vh;
+	position: fixed;
+	top: 5vh;
+	bottom: 0;
+	opacity: 1;
+	padding: 30px;
+	background-color: #ffffffb7;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-self: flex-end;
+	height: 90vh;
+	transition: all 500ms;
+	z-index: 1000;
+	width: 80%;
+	transition: all 800ms;
+	backdrop-filter: blur(5px);
+	-webkit-backdrop-filter: blur(5px);
+}
+
+.transition {
+	opacity: 0;
+}
+
+
+.hamburger-menu {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	z-index: 10000000000;
+}
+.hamburger-menu span {
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #000;
+	margin: 5px 0;
+}
+
+
+	/* header #header {
 		padding: 5px 20px;
-		/* position: sticky; */
 		top: 0;
 		left: 0;
+		height: 2000px;
 	}
 
-	nav .desktop-menu {
-		display: none;
+	.header-container{
+		height: 100%;
 	}
 
-	header nav .mobile-menu {
-		transform: translatex(-100%);
-		opacity: 0;
-		position: absolute;
-		top: 10vh;
-		padding: 50px;
-		left: 0;
-		transition: all 800ms;
+	
+
+	.mobiele-navigatie{
+		display: block;
+		position: relative;
+		z-index: 999999;
+		background-color: brown;
 	}
 
-	header nav .mobile-menu.show {
-		transform: translatex(0%);
-		position: fixed;
-		opacity: 1;
-		padding: 30px;
-		background-color: #ffffffb7;
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
-		align-self: flex-end;
-		height: 90vh;
-		transition: all 500ms;
-		z-index: 1000;
-		width: 80%;
-		transition: all 800ms;
-		backdrop-filter: blur(5px);
-		-webkit-backdrop-filter: blur(5px);
-	}
+
+
+	
+
+
+
+
 
 	nav li a {
 		display: flex;
 		padding-top: 20px;
-	}
+	} */
 
 	/* Change the hamburger menu button to a close icon when the menu is open */
 	.hamburger-menu.open span:nth-child(1) {
@@ -326,7 +431,7 @@ footer p {
 	}
 
 	header img {
-		width: 30%;
+		width: 40%;
 	}
 
 	.mob-nav {
@@ -344,6 +449,8 @@ footer p {
 	.links-mobile {
 		display: block;
 	}
+
+	
 
 	footer {
 		min-height: 0vh;

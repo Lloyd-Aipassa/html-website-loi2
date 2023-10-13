@@ -6,7 +6,7 @@
 
 article {
 	background-color: var(--bg);
-	padding-bottom: 10px;
+	
 }
 
 main h2 {
@@ -356,7 +356,8 @@ q {
 		grid-template-areas:
 			"two"
 			"one";
-		padding: 0px 0;
+		padding: 0px 24px 24px;
+		margin: 0;
 	}
 
 	.hero p {
