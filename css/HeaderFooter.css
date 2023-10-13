@@ -315,6 +315,16 @@ footer p {
 		line-height: 3.1rem;
 	}
 
+	h2{
+		font-weight: 600;
+		font-size: 2rem;
+		line-height: 2.9rem;
+	}
+
+	p{
+		font-size: 15px;
+	}
+
 	header img {
 		width: 30%;
 	}
