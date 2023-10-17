@@ -17,10 +17,12 @@ main h2 {
 	width: 100%;
 	height: 90vh;
 	background-image: var(--img);
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
 }
+
+/********** Hero ********/
 
 .hero {
 	max-width: 1200px;
@@ -53,6 +55,12 @@ main h2 {
 	grid-area: two;
 }
 
+.main-container {
+	max-width: 1600px;
+	margin: 50px auto;
+	padding: 0 50px;
+}
+
 /********** History ********/
 
 #history {
@@ -69,11 +77,11 @@ p.quote-history {
 
 #history .history-container {
 	display: grid;
-	grid-template-columns: 250px 450px 500px;
-	max-width: 1200px;
-	justify-content: center;
-	height: 100%;
+	grid-template-columns: max(15%,150px) max(60%,400px) 1fr;
+	/* grid-template-columns: 300px 850px 1fr; */
 	margin: 0 auto;
+	align-content: space-around;
+	height: 100%;
 }
 
 #history .image-container {
@@ -81,19 +89,19 @@ p.quote-history {
 	background-color: #fff;
 	padding: 10px;
 	align-self: center;
-	margin-right: -40px;
-	margin-bottom: -200px;
+	margin-bottom: -100px;
 	z-index: 7;
 	background-color: #fff;
 	padding: 10px;
+	width: 100%;
 }
 
 #history .image-container2 {
 	align-self: center;
-	height: 600px;
 	width: 100%;
-	width: 600px;
 	margin-top: -70px;
+	margin-left: -50px;
+	margin-right: -200px;
 	background-color: #fff;
 	padding: 10px;
 }
@@ -102,12 +110,7 @@ p.quote-history {
 .image-container2 img {
 	width: 100%;
 	height: 100%;
-}
-.image-container2 img {
 	object-fit: cover;
-}
-.image-container img {
-	object-fit: contain;
 }
 
 #history .card-content {
@@ -119,8 +122,8 @@ p.quote-history {
 	color: #000;
 	padding: 60px;
 	align-self: center;
-	margin-left: -50px;
-	margin-top: -100px;
+	margin-left: -150px;
+	margin-top: -150px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -173,11 +176,10 @@ p.quote-history {
 
 .state-of-mind-container {
 	display: grid;
-	grid-template-columns: 400px 1fr 250px;
+	grid-template-columns: 1fr max(50%,400px) max(15%,200px);
 	margin: 0 auto;
 	align-content: space-around;
-	max-width: 1200px;
-	height: 100% !important;
+	height: 100%;
 }
 
 #state-of-mind .card-content {
@@ -239,7 +241,7 @@ q {
 #hotels-in-ny {
 	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
 		linear-gradient(#fff, #fff);
-		padding: 50px 0;
+	padding: 50px 0;
 }
 .hotels-container {
 	max-width: 1200px;
@@ -269,38 +271,41 @@ table {
 	border-spacing: 30px;
 }
 
-@media (max-width: 1440px) {
-	.page-nav {
-		background-color: #fff;
-		border-radius: 0px;
-		padding: 10px 10px 10px 20px;
-		align-items: center;
-		justify-content: center;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		display: flex;
-		gap: 50px;
-		z-index: 20;
-		opacity: 0;
-		transition: opacity 0.5s;
-		border-top: 1px solid #bdb9b9;
-		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
-			rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
-		width: 100%;
+@media screen and (max-width: 1440px) {
+	.main-container {
+		max-width: 1800px;
+		margin: 0px auto;
+		padding: 50px;
 	}
-	ul {
-		list-style: none;
-	}
-
-	.page-nav a {
-		display: block;
-		color: #000;
-		margin-top: 10px;
-	}
+	
 }
 
 @media (max-width: 1040px) {
+
+	.main-container {
+		max-width: 1800px;
+		margin: 0px auto;
+		padding: 50px;
+	}
+	#history .history-container,
+	#state-of-mind .state-of-mind-container {
+		grid-template-columns: 1fr;
+	}
+
+	#history .image-container,
+	#state-of-mind .image-container {
+		display: none;
+	}
+
+	#history .image-container2,
+	#state-of-mind .image-container2 {
+		margin: 0;
+	}
+
+	#history .card-content,
+	#state-of-mind .card-content {
+		margin: 0;
+	}
 }
 
 @media (max-width: 768px) {
@@ -341,6 +346,12 @@ table {
 		grid-area: two;
 	}
 
+	.main-container {
+		max-width: 1800px;
+		margin: 50px auto;
+		padding: 0px;
+	}
+
 	#history {
 		/* background-color: var(--main-color-orange); */
 		background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
@@ -348,10 +359,6 @@ table {
 		padding: 24px;
 	}
 
-	#history .history-container {
-		display: grid;
-		grid-template-columns: 1fr;
-	}
 
 	#history .image-container {
 		display: none;
@@ -487,29 +494,29 @@ table {
 
 	/********** hotels-in-ny **********/
 
-.hotels-container h2 {
-	margin-bottom: 10px;
-}
+	.hotels-container h2 {
+		margin-bottom: 10px;
+	}
 
-.hotels-container p {
-	margin-bottom: 30px;
-	font-size: 14px;
-}
+	.hotels-container p {
+		margin-bottom: 30px;
+		font-size: 14px;
+	}
 
-table {
-	border: 5px solid #fbe8de;
-}
+	table {
+		border: 5px solid #fbe8de;
+	}
 
-th,
-td {
-	border-bottom: 5px solid #fbe8de;
-	text-align: center;
-	vertical-align: middle;
-}
+	th,
+	td {
+		border-bottom: 5px solid #fbe8de;
+		text-align: center;
+		vertical-align: middle;
+	}
 
-table {
-	border-spacing: 30px;
-}
+	table {
+		border-spacing: 30px;
+	}
 }
 
 /*********** Fadein animatie ************/

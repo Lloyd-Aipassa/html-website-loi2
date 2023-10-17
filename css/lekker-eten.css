@@ -57,11 +57,12 @@
 }
 
 .container {
-	max-width: 1300px;
+	max-width: 1600px;
+	padding: 50px;
 	margin: 0 auto;
 	display: grid;
 	gap: 15px;
-	margin-top: 15px;
+	margin-top: -50px;
 	grid-auto-columns: 1fr;
 	grid-template-areas:
 		"one"
@@ -80,6 +81,7 @@
 	display: grid;
 	grid-auto-columns: 1fr;
 	gap: 15px;
+	margin-top: 50px;
 }
 
 #di-fara {
@@ -128,6 +130,10 @@ img {
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	grid-area: two;
 	padding: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 }
 
 #di-fara .content-lekker-eten,

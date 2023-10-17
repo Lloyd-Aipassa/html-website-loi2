@@ -1,24 +1,11 @@
-.container {
-	max-width: 1300px;
-	margin: 0 auto;
-	display: grid;
-	gap: 15px;
-	margin-top: 15px;
-	grid-auto-columns: 1fr;
-	grid-template-areas:
-		"one one one two two two"
-		"three three four four five five";
-	margin-bottom: 10px;
-}
-
 #plekken-die-je-gezien-moet-hebben {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
-	background-image: url("/images/NewYork/NY-food-hero.webp");
+	background-image: url("/images/geweest-moet-zijn/hero-must-see.webp");
 	background-size: auto;
 	background-repeat: no-repeat;
-	background-position: bottom;
+	background-position: top;
 	display: grid;
 	grid-template-columns: 1fr;
 	justify-items: center;
@@ -29,7 +16,7 @@
 	content: "";
 	position: absolute;
 	inset: 0;
-	background-color: #00000056;
+	background-color: #0000002d;
 	z-index: 2;
 }
 
@@ -67,6 +54,20 @@
 	text-shadow: 2px 2px 2px #000;
 	z-index: 4;
 	align-self: center;
+}
+
+.container {
+	max-width: 1600px;
+	padding: 50px;
+	margin: 0 auto;
+	display: grid;
+	gap: 15px;
+	margin-top: 15px;
+	grid-auto-columns: 1fr;
+	grid-template-areas:
+		"one one one two two two"
+		"three three four four five five";
+	margin-bottom: 10px;
 }
 
 #central-park {
@@ -117,20 +118,6 @@ img {
 	height: 100%;
 	width: 100%;
 }
-
-/* picture {
-	align-self: stretch;
-} */
-
-/* #empire-state p,
-#bernardin p,
-#momofuku p,
-#Katz p,
-#peter-luger p {
-	color: #000;
-	max-width: 600px;
-	margin: 15px 0 34px;
-} */
 
 .content-container {
 	padding: 50px;
