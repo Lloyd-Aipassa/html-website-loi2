@@ -1,14 +1,14 @@
-
 /***** Variabelen *****/
 
 :root {
-	--bg-white: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fff, #fff);
-	--bg-pink: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fbe8de, #fbe8de);
-	--bg-blue: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#e1eaf4, #e1eaf4);
+	--bg-white: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
+	--bg-pink: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fbe8de, #fbe8de);
+	--bg-blue: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#e1eaf4, #e1eaf4);
 	--img: url("/images/NewYork/nyBanner2.webp");
 }
-
-
 
 article {
 	background-color: var(--bg);
@@ -81,7 +81,7 @@ p.quote-history {
 
 #history .history-container {
 	display: grid;
-	grid-template-columns: max(19%,150px) max(60%,400px) 1fr;
+	grid-template-columns: max(19%, 150px) max(60%, 400px) 1fr;
 	/* grid-template-columns: 300px 850px 1fr; */
 	margin: 0 auto;
 	align-content: space-around;
@@ -176,7 +176,7 @@ p.quote-history {
 
 .state-of-mind-container {
 	display: grid;
-	grid-template-columns: 1fr max(50%,400px) max(15%,200px);
+	grid-template-columns: 1fr max(50%, 400px) max(15%, 200px);
 	margin: 0 auto;
 	align-content: space-around;
 	height: 100%;
@@ -276,11 +276,9 @@ table {
 		margin: 0px auto;
 		padding: 50px;
 	}
-	
 }
 
 @media (max-width: 1040px) {
-
 	.hero {
 		max-width: 1200px;
 		height: 100%;
@@ -288,9 +286,9 @@ table {
 		display: grid;
 		grid-auto-columns: 1fr;
 		justify-items: center;
-		grid-template-areas: 
-		"two"
-		"one";
+		grid-template-areas:
+			"two"
+			"one";
 		margin-bottom: 5%;
 		z-index: 2;
 	}
@@ -374,7 +372,6 @@ table {
 			linear-gradient(#fbe8de, #fbe8de);
 		padding: 24px;
 	}
-
 
 	#history .image-container {
 		display: none;
