@@ -1,21 +1,32 @@
 main {
 	background-color: #fff;
-	padding: 5%;
+}
+
+.main-container{
+	max-width: 1920px;
+	margin: 50px auto;
+	padding: 0 50px;
 }
 
 .banner {
 	width: 100%;
 	height: 90vh;
 	background-image: url("/images/NewYork/banner.webp");
-	background-size: auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: bottom;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
 
 .banner h1 {
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+	text-align: center;
+}
+.banner p {
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
 	text-align: center;
@@ -146,7 +157,25 @@ section.cards h2 {
 	align-self: bottom;
 }
 
+@media screen and (max-width: 1440px) {
+	.main-container{
+		margin: 50px auto;
+	}
+}
 @media (max-width: 1024px) {
+
+	.banner {
+		width: 100%;
+		height: 50vh;
+		background-image: url("/images/NewYork/banner.webp");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
 	.home-text {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -217,6 +246,13 @@ section.cards h2 {
 }
 
 @media (max-width: 768px) {
+
+	.main-container{
+		max-width: 1920px;
+		margin: 50px auto;
+		padding: 0 25px;
+	}
+
 	.images {
 		min-height: 0px;
 		grid-template-columns: 3fr;

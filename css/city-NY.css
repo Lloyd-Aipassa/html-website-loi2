@@ -234,6 +234,8 @@ q {
 	font-style: italic;
 }
 
+/********** hotels-in-ny **********/
+
 #hotels-in-ny {
 	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
 		linear-gradient(#fff, #fff);
@@ -242,6 +244,14 @@ q {
 .hotels-container {
 	max-width: 1200px;
 	margin: 0 auto;
+	text-align: center;
+}
+.hotels-container h2 {
+	margin-bottom: 10px;
+}
+
+.hotels-container p {
+	margin-bottom: 30px;
 }
 
 table {
@@ -474,6 +484,32 @@ table {
 			"four"
 			"five";
 	}
+
+	/********** hotels-in-ny **********/
+
+.hotels-container h2 {
+	margin-bottom: 10px;
+}
+
+.hotels-container p {
+	margin-bottom: 30px;
+	font-size: 14px;
+}
+
+table {
+	border: 5px solid #fbe8de;
+}
+
+th,
+td {
+	border-bottom: 5px solid #fbe8de;
+	text-align: center;
+	vertical-align: middle;
+}
+
+table {
+	border-spacing: 30px;
+}
 }
 
 /*********** Fadein animatie ************/
