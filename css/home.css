@@ -12,11 +12,15 @@ main {
 	background-color: #fff;
 }
 
+/********** Main container ********/
+
 .main-container {
 	max-width: 1600px;
 	margin: 50px auto;
 	padding: 0 50px;
 }
+
+/********** Banner / Hero ********/
 
 .banner {
 	width: 100%;
@@ -42,6 +46,8 @@ main {
 	text-align: center;
 }
 
+/********** Over mij en de website ********/
+
 .home-text {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -55,6 +61,8 @@ main {
 	padding: 50px;
 	border-radius: 10px;
 }
+
+/********** Gallerij ********/
 
 .home-gallery-titel {
 	text-align: center;
@@ -168,12 +176,18 @@ video {
 	align-self: bottom;
 }
 
+/********** Laptop ********/
+
 @media screen and (max-width: 1440px) {
 	.main-container {
 		margin: 50px auto;
 	}
 }
+
+/********** Tablet ********/
+
 @media (max-width: 1024px) {
+	/********** Hero / banner ********/
 	.banner {
 		width: 100%;
 		height: 50vh;
@@ -186,12 +200,16 @@ video {
 		align-items: center;
 		justify-content: center;
 	}
+
+	/********** Over mij  ********/
 	.home-text {
 		display: grid;
 		grid-template-columns: 1fr;
 		gap: 50px;
 		margin-bottom: 50px;
 	}
+
+	/********** Gallerij ********/
 
 	.images {
 		min-height: 220px;
@@ -222,6 +240,8 @@ video {
 		height: auto;
 		border-radius: 10px;
 	}
+
+	/********** Cards ********/
 
 	.cards {
 		grid-template-columns: 1fr;
@@ -255,12 +275,15 @@ video {
 	}
 }
 
+/********** Mobiel ********/
 @media (max-width: 768px) {
 	.main-container {
 		max-width: 1920px;
 		margin: 50px auto;
 		padding: 0 25px;
 	}
+
+	/********** Gallerij ********/
 
 	.images {
 		min-height: 0px;
