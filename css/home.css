@@ -1,9 +1,16 @@
+/***** Variabelen *****/
+:root {
+	--bg-white: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fff, #fff);
+	--bg-pink: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fbe8de, #fbe8de);
+	--bg-blue: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#e1eaf4, #e1eaf4);
+}
+
 main {
 	background-color: #fff;
 }
 
 .main-container{
-	max-width: 1920px;
+	max-width: 1600px;
 	margin: 50px auto;
 	padding: 0 50px;
 }
@@ -61,6 +68,7 @@ main {
 	border-radius: 10px;
 	padding: 20px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background: var(--bg-white);
 }
 
 .home-gallery1,
@@ -142,14 +150,14 @@ section.cards h2 {
 }
 
 .home-parijs {
-	background-color: var(--main-color-green);
+	background: var(--bg-pink);
 }
 .home-japan {
-	background-color: var(--main-color-purple);
+	background: var(--bg-white);
 }
 
 .home-new-york {
-	background-color: var(--main-color-orange);
+	background: var(--bg-blue);
 }
 
 .cards img {
