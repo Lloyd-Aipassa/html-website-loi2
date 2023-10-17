@@ -102,6 +102,7 @@ header {
 
 header img{
 	width: 65%;
+	box-shadow: none;
 }
 
 nav .desktop-menu {
