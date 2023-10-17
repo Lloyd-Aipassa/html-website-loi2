@@ -140,23 +140,23 @@ section.cards h2 {
 	background-color: #1d1d1d;
 }
 
-.home-parijs,
-.home-japan,
-.home-new-york {
+.must-see-new-york,
+.over-new-york,
+.eten-new-york {
 	padding: 20px 20px 50px 20px;
 	text-align: center;
 	border-radius: 10px;
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.home-parijs {
+.must-see-new-york {
 	background: var(--bg-pink);
 }
-.home-japan {
+.over-new-york {
 	background: var(--bg-white);
 }
 
-.home-new-york {
+.eten-new-york {
 	background: var(--bg-blue);
 }
 
@@ -225,21 +225,21 @@ section.cards h2 {
 		grid-template-columns: 1fr;
 	}
 
-	.home-parijs,
-	.home-japan,
-	.home-new-york {
+	.must-see-new-york,
+	.over-new-york,
+	.eten-new-york {
 		display: flex;
 		gap: 20px;
 		text-align: left;
 	}
 
-	.home-parijs {
+	.must-see-new-york {
 		flex-direction: row-reverse;
 	}
 
-	.home-parijs img,
-	.home-japan img,
-	.home-new-york img {
+	.must-see-new-york img,
+	.over-new-york img,
+	.eten-new-york img {
 		max-width: 300px;
 		object-fit: cover;
 	}
