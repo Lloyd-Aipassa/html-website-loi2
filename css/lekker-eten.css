@@ -1,16 +1,15 @@
-.container{
-	max-width: 1300px;
-	margin: 0 auto;
-}
-
 #lekker-eten-hero {
 	position: relative;
 	width: 100%;
-	height: 100vh;
+	min-height: 100vh;
 	background-image: url("/images/NewYork/NY-food-hero.webp");
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: bottom;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	align-content: center;
 }
 
 #lekker-eten-hero::after {
@@ -22,25 +21,20 @@
 }
 
 .hero {
-	align-content: center;
+	position: relative;
 	max-width: 1200px;
 	height: 100%;
 	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
 	text-align: center;
 	margin-bottom: 5%;
-	gap: 35px;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .blur {
 	z-index: 3;
-	background-color: #ffffff19;
-	backdrop-filter: blur(4.5px);
-	-webkit-backdrop-filter: blur(4.5px);
-	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 20px;
 	padding: 35px;
 }
@@ -51,44 +45,73 @@
 	align-self: center;
 	z-index: 4;
 	color: #fff;
+	text-shadow: 2px 2px 2px #000;
 }
 
 .hero h1 {
-	max-width: 650px;
+	max-width: 1050px;
 	color: #fff;
 	text-shadow: 2px 2px 2px #000;
 	z-index: 4;
 	align-self: center;
 }
 
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	display: grid;
+	gap: 15px;
+	margin-top: 15px;
+	grid-auto-columns: 1fr;
+	grid-template-areas:
+		"one"
+		"two"
+		"three"
+		"four"
+		"five";
+	margin-bottom: 10px;
+}
+
 #di-fara,
+#bernardin,
 #momofuku,
+#Katz,
 #peter-luger {
 	display: grid;
-	gap: 20px;
-	margin-top: 100px;
 	grid-auto-columns: 1fr;
+	gap: 15px;
+}
+
+#di-fara {
+	grid-area: one;
+	grid-template-areas: "one two";
+}
+#bernardin {
+	grid-area: two;
 	grid-template-areas: "one two";
 }
 
-#bernardin,
-#Katz {
-	gap: 10px;
-	margin-top: 100px;	
-	display: grid;
-	grid-auto-columns: 1fr;
+#momofuku {
+	grid-area: three;
 	grid-template-areas: "two one";
 }
 
-#di-fara img,
-#bernardin img,
-#momofuku img,
-#Katz img,
-#peter-luger,
+#peter-luger {
+	grid-area: four;
+	grid-template-areas: "one two";
+}
+#Katz {
+	grid-area: five;
+	grid-template-areas: "two one";
+}
+
 img {
-	align-self: stretch;
+	object-fit: cover;
+	height: 100%;
 	width: 100%;
+	align-self: stretch;
 	grid-area: one;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #di-fara p,
@@ -102,39 +125,26 @@ img {
 }
 
 .content-lekker-eten {
-	align-self: center;
-	padding: 50px;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 	grid-area: two;
+	padding: 50px;
 }
 
-#momofuku .content-lekker-eten {
+#di-fara .content-lekker-eten,
+#Katz .content-lekker-eten {
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
+}
+#bernardin .content-lekker-eten,
+#peter-luger .content-lekker-eten {
 	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
 		linear-gradient(#fbe8de, #fbe8de);
-	align-self: stretch;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: baseline;
 }
-#Katz .content-lekker-eten,
-#di-fara .content-lekker-eten {
+.content-lekker-eten {
+	grid-area: two;
+	padding: 50px;
 	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
 		linear-gradient(#e1eaf4, #e1eaf4);
-	align-self: stretch;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: baseline;
-}
-#peter-luger .content-lekker-eten,
-#bernardin .content-lekker-eten {
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#ffff, #fff);
-	align-self: stretch;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: baseline;
 }
 
 .content-lekker-eten a {
@@ -143,10 +153,11 @@ img {
 	padding: 15px 50px;
 	border: 1px solid black;
 	border-radius: 25px;
+	/* margin: 50px 0 0 0 ; */
 }
 
 @media (max-width: 1240px) {
-	.container{
+	.container {
 		max-width: 1200px;
 		margin: 0 auto;
 	}
@@ -155,32 +166,107 @@ img {
 /* Tablet */
 @media (max-width: 1024px) {
 	#di-fara,
-	#Katz {
-		gap: 0;
-		grid-template-areas: 
-		"one"
-		"two";
-	}
-	
-	#bernardin {
-		gap: 10px;
-		margin-top: 10px;	
+	#bernardin,
+	#momofuku,
+	#Katz,
+	#peter-luger {
 		display: grid;
 		grid-auto-columns: 1fr;
-		grid-template-areas: "two one";
+		gap: 0px;
+	}
+
+	#di-fara {
+		grid-area: one;
+		grid-template-areas:
+			"one"
+			"two";
+	}
+	#bernardin {
+		grid-area: two;
+		grid-template-areas:
+			"one"
+			"two";
+	}
+
+	#momofuku {
+		grid-area: three;
+		grid-template-areas:
+			"one"
+			"two";
+	}
+
+	#peter-luger {
+		grid-area: four;
+		grid-template-areas:
+			"one"
+			"two";
+	}
+	#Katz {
+		grid-area: five;
+		grid-template-areas:
+			"one"
+			"two";
 	}
 }
 
 @media (max-width: 720px) {
-	#di-fara,
-	#Katz,	
-	#bernardin,
-	#peter-luger,
-	#momofuku {
-		padding: 0 10px;
-		gap: 0;
-		grid-template-areas: 
-		"one"
-		"two";
+	#lekker-eten-hero {
+		min-height: 60vh;
+	}
+
+	#lekker-eten-hero::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: #00000056;
+		z-index: 2;
+	}
+
+	.hero {
+		align-content: center;
+		max-width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		margin-bottom: 5%;
+		gap: 35px;
+	}
+	.hero {
+		align-content: center;
+		max-width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: start;
+		text-align: center;
+		margin-bottom: 5%;
+		gap: 35px;
+	}
+	.hero h1 {
+		font-size: 30px;
+		line-height: 105%;
+		margin-bottom: -50px;
+	}
+
+	.hero p {
+		position: relative;
+		max-width: 550px;
+		border-radius: 8px;
+		align-self: center;
+		z-index: 4;
+		color: #fff;
+		text-shadow: 2px 2px 2px #000;
+	}
+
+	.container {
+		padding: 25px;
+	}
+
+	.content-container {
+		padding: 25px;
 	}
 }
