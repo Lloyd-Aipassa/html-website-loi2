@@ -6,7 +6,6 @@
 
 article {
 	background-color: var(--bg);
-	
 }
 
 main h2 {
@@ -63,7 +62,7 @@ main h2 {
 	padding: 250px 0 180px;
 }
 
-p.quote-history{
+p.quote-history {
 	text-align: center;
 	margin: 150px 0 0;
 }
@@ -148,14 +147,13 @@ p.quote-history{
 }
 #bijnamen .text-container {
 	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-	linear-gradient(#fbe8de, #fbe8de);
+		linear-gradient(#fbe8de, #fbe8de);
 	padding: 35px;
 	/* align-self: center; */
 }
 
 #bijnamen p {
 	max-width: 500px;
-	
 }
 
 #bijnamen img {
@@ -236,75 +234,27 @@ q {
 	font-style: italic;
 }
 
-/******************MUST SEE*****************/
-#Top-Attractions {
+#hotels-in-ny {
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
+		padding: 50px 0;
+}
+.hotels-container {
 	max-width: 1200px;
-	margin: 50px auto 100px;
-	display: grid;
-	gap: 20px;
-	grid-auto-columns: 1fr;
-	/* grid-auto-rows: auto; */
-	grid-template-areas:
-		"one one two three"
-		"one one two three"
-		"one one two three"
-		"four four two three"
-		"four four five five"
-		"four four five five";
-	/* grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 1fr auto auto; */
+	margin: 0 auto;
 }
 
-.empire-state,
-.must-see,
-.central-park,
-.het-vrijheidsbeeld,
-.broadway {
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-	background-color: #fff;
+table {
+	border: 5px solid #fbe8de;
 }
 
-.must-see {
-	position: relative;
-	grid-area: one;
+th,
+td {
+	border-bottom: 5px solid #fbe8de;
 }
 
-.must-see h2 {
-	font-family: "Cabin Sketch", cursive;
-	font-size: 30px;
-	line-height: 40px;
-}
-
-.must-see img {
-	width: 100%;
-}
-
-.content-container {
-	padding: 24px;
-}
-
-.empire-state {
-	grid-area: two;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.het-vrijheidsbeeld {
-	grid-area: three;
-}
-
-.het-vrijheidsbeeld img,
-.empire-state img {
-	width: 100%;
-}
-
-.central-park {
-	grid-area: four;
-}
-
-.broadway {
-	grid-area: five;
+table {
+	border-spacing: 30px;
 }
 
 @media (max-width: 1440px) {
@@ -339,7 +289,6 @@ q {
 }
 
 @media (max-width: 1040px) {
-
 }
 
 @media (max-width: 768px) {
@@ -348,7 +297,7 @@ q {
 		padding: 500px 0;
 	}
 
-	#new-york{
+	#new-york {
 		height: 100%;
 	}
 
@@ -371,7 +320,7 @@ q {
 		border-radius: 8px;
 		align-self: center;
 	}
-	
+
 	.hero h1 {
 		margin: 50px 0 30px;
 		color: #fff;
@@ -393,9 +342,9 @@ q {
 	}
 
 	#history .image-container {
-	display: none;
+		display: none;
 	}
-	
+
 	#history .image-container2 {
 		align-self: center;
 		height: 100%;
@@ -413,7 +362,7 @@ q {
 		margin: 0;
 	}
 
-	p.quote-history{
+	p.quote-history {
 		text-align: center;
 		margin: 50px 0 0;
 	}
@@ -424,101 +373,95 @@ q {
 
 	/********** bijnamen **********/
 
-#bijnamen {
-	padding: 35px 24px;
-}
+	#bijnamen {
+		padding: 35px 24px;
+	}
 
-#bijnamen .bijnamen-container {
-	grid-template-columns: 1fr;
-	gap: 10px;
-}
-#bijnamen .text-container {
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-	linear-gradient(#fbe8de, #fbe8de);
-	padding: 35px;
-	/* align-self: center; */
-}
+	#bijnamen .bijnamen-container {
+		grid-template-columns: 1fr;
+		gap: 10px;
+	}
+	#bijnamen .text-container {
+		background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+			linear-gradient(#fbe8de, #fbe8de);
+		padding: 35px;
+		/* align-self: center; */
+	}
 
-#bijnamen p {
-	max-width: 500px;
-	
-}
+	#bijnamen p {
+		max-width: 500px;
+	}
 
-#bijnamen img {
-	max-width: 600px;
-}
+	#bijnamen img {
+		max-width: 600px;
+	}
 
-/********** State of mind **********/
+	/********** State of mind **********/
 
-#state-of-mind {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 35px 24px;
-}
+	#state-of-mind {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 35px 24px;
+	}
 
-.state-of-mind-container {
-	grid-template-columns:1fr;
-	margin: 0 auto;
-	align-content: space-around;
-	max-width: 1200px;
-	height: 100% !important;
-}
+	.state-of-mind-container {
+		grid-template-columns: 1fr;
+		margin: 0 auto;
+		align-content: space-around;
+		max-width: 1200px;
+		height: 100% !important;
+	}
 
-#state-of-mind .card-content {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-color: #fff;
-	padding: 24px;
-	align-self: center;
-	margin: 0;
-	z-index: 5;
-	box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
-}
+	#state-of-mind .card-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		background-color: #fff;
+		padding: 24px;
+		align-self: center;
+		margin: 0;
+		z-index: 5;
+		box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+	}
 
-#state-of-mind .card-content p {
-	margin: 0;
-}
-#state-of-mind .card-content h2 {
-	max-width: 320px;
-	line-height: 95%;
-	margin: 0 0 20px 0;
-	text-align: center;
-}
+	#state-of-mind .card-content p {
+		margin: 0;
+	}
+	#state-of-mind .card-content h2 {
+		max-width: 320px;
+		line-height: 95%;
+		margin: 0 0 20px 0;
+		text-align: center;
+	}
 
-#state-of-mind .image-container2 {
-	display: none;
-}
+	#state-of-mind .image-container2 {
+		display: none;
+	}
 
-#state-of-mind .image-container {
-	box-shadow: none;
-	background-color: #fff;
-	padding: 10px;
-	margin: 0;
-	
-}
+	#state-of-mind .image-container {
+		box-shadow: none;
+		background-color: #fff;
+		padding: 10px;
+		margin: 0;
+	}
 
-#state-of-mind p {
-	margin-bottom: 100px;
-	text-align: center;
-}
+	#state-of-mind p {
+		margin-bottom: 100px;
+		text-align: center;
+	}
 
-#state-of-mind p.quote-state-of-mind{
-	margin-bottom: 35px;
-}
+	#state-of-mind p.quote-state-of-mind {
+		margin-bottom: 35px;
+	}
 
-#q {
-	text-align: center;
-	font-family: "Poppins", sans-serif;
-	font-size: 20px;
-	font-weight: 600;
-	font-style: italic;
-}
-
-
-
-
+	#q {
+		text-align: center;
+		font-family: "Poppins", sans-serif;
+		font-size: 20px;
+		font-weight: 600;
+		font-style: italic;
+	}
 
 	#Top-Attractions {
 		grid-auto-rows: auto;
