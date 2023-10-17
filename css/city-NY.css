@@ -251,6 +251,8 @@ table {
 th,
 td {
 	border-bottom: 5px solid #fbe8de;
+	text-align: center;
+	vertical-align: middle;
 }
 
 table {
