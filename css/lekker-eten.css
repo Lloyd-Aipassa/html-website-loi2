@@ -1,3 +1,11 @@
+/***** Variabelen *****/
+
+:root {
+	--bg-white: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fff, #fff);
+	--bg-pink: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fbe8de, #fbe8de);
+	--bg-blue: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#e1eaf4, #e1eaf4);
+}
+
 #lekker-eten-hero {
 	position: relative;
 	width: 100%;
@@ -90,21 +98,21 @@
 }
 #bernardin {
 	grid-area: two;
-	grid-template-areas: "one two";
+	grid-template-areas: "two one";
 }
 
 #momofuku {
 	grid-area: three;
-	grid-template-areas: "two one";
+	grid-template-areas: "one two";
 }
 
 #peter-luger {
 	grid-area: four;
-	grid-template-areas: "one two";
+	grid-template-areas: "two one";
 }
 #Katz {
 	grid-area: five;
-	grid-template-areas: "two one";
+	grid-template-areas: "one two";
 }
 
 img {
@@ -138,19 +146,16 @@ img {
 
 #di-fara .content-lekker-eten,
 #Katz .content-lekker-eten {
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#fff, #fff);
+	background-image: var(--bg-white);
 }
 #bernardin .content-lekker-eten,
 #peter-luger .content-lekker-eten {
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#fbe8de, #fbe8de);
+	background-image: var(--bg-pink);
 }
 .content-lekker-eten {
 	grid-area: two;
 	padding: 50px;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#e1eaf4, #e1eaf4);
+	background-image: var(--bg-blue);
 }
 
 .content-lekker-eten a {
@@ -159,7 +164,6 @@ img {
 	padding: 15px 50px;
 	border: 1px solid black;
 	border-radius: 25px;
-	/* margin: 50px 0 0 0 ; */
 }
 
 @media (max-width: 1240px) {

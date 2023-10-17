@@ -6,12 +6,7 @@
 	scroll-behavior: smooth;
 }
 
-:root {
-	--main-color-green: #DFFFE359;
-	--main-color-purple: #FFEBDA;
-	--main-color-orange: #BFB2BF46;
-}
-
+/********Google fonts Montserrat en Poppins*********/
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Montserrat:ital,wght@0,400;0,600;0,900;1,400;1,600;1,900&family=Poppins:ital,wght@0,400;0,600;0,900;1,400;1,600&display=swap");
 
 body {
@@ -65,6 +60,20 @@ header#header {
 	z-index: 9999;
 }
 
+header {
+	animation: fadeIn 1500ms;
+}
+
+/* Keyframe animation for the fade-in effect */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 .header-container {
 	max-width: 1200px;
 	display: flex;
@@ -97,10 +106,9 @@ nav .desktop-menu {
 	align-items: center;
 }
 
-.mobiele-navigatie{
+.mobiele-navigatie {
 	display: none;
 }
-
 
 .dropdown {
 	position: relative;
@@ -150,67 +158,6 @@ nav .desktop-menu {
 	display: block;
 }
 
-/* nav ul {
-	display: flex;
-	gap: 50px;
-	align-self: flex-end;
-}
-nav li {
-	list-style: none;
-}
-
-nav li a {
-	text-decoration: none;
-	color: black;
-}
-
-.links-mobile{
-	display: none;
-}
-
-
-.dropdown {
-	position: relative;
-}
-
-.dropdown button{
-	border: none;
-	background-color: #ffffff00;
-}
-.dropdown button:hover p{
-	color: var(--main-color-dark-orange);
-}
-.dropdown:hover .dropdown-menu{
-display: block;
-}
-
-.dropdown-menu {
-	display: none;
-	position: absolute;
-	top: 20px;
-	left: 0;
-	width: 200px;
-	background-color: #fff;
-	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-}
-
-.dropdown li {
-	padding: 15px 24px;
-	border-bottom: #c0c0c0 1px solid;
-}
-
-.mob-nav {
-	display: none;
-}
-
-.transition {
-	opacity: 0;
-}
-
-.hamburger-menu span {
-	display: none;
-} */
-
 footer {
 	min-height: 0vh;
 
@@ -218,55 +165,52 @@ footer {
 }
 
 @media (max-width: 1040px) {
-
 	/********Header*********/
-header #header {
-	position: relative;
-	width: 100vw;
-	padding: 5px 120px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-	background-color: #fff;
-	z-index: 9999;
-}
+	header #header {
+		position: relative;
+		width: 100vw;
+		padding: 5px 120px;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+		background-color: #fff;
+		z-index: 9999;
+	}
 
-.header-container {
-	max-width: 1200px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: auto;
-	height: 10vh;
-}
+	.header-container {
+		max-width: 1200px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: auto;
+		height: 10vh;
+	}
 
-.logo {
-	display: flex;
-	align-items: center;
-	text-decoration: none;
-}
+	.logo {
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
 
-.logo p {
-	font-family: "Cabin Sketch", cursive;
-	text-decoration: none;
-	margin-left: -16px;
-}
+	.logo p {
+		font-family: "Cabin Sketch", cursive;
+		text-decoration: none;
+		margin-left: -16px;
+	}
 
-.logo a {
-	display: block;
-	width: 130px;
-	height: 100%;
-}
+	.logo a {
+		display: block;
+		width: 130px;
+		height: 100%;
+	}
 
-nav .desktop-menu {
-	display: none;
-}
+	nav .desktop-menu {
+		display: none;
+	}
 
-.mobiele-navigatie{
-	display: block;
-}
+	.mobiele-navigatie {
+		display: block;
+	}
 
-
-
-/* header nav .mobile-menu {
+	/* header nav .mobile-menu {
 	display: block;
 	
 	opacity: 0;
@@ -278,70 +222,68 @@ nav .desktop-menu {
 	z-index: 99999;
 } */
 
-header nav .mobile-menu {
-	transform: translatex(-100%);
-	position: fixed;
-	
-	bottom: 0;
-	left: 0;
-	opacity: 1;
-	padding: 30px;
-	background-color: #ffffffb7;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	align-self: flex-end;
-	height: 90vh;
-	transition: all 500ms;
-	z-index: 1000;
-	width: 80%;
-	transition: all 800ms;
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-}
-header nav .mobile-menu.show {
-	transform: translatex(0%);
-	height: 90vh;
-	position: fixed;
-	
-	bottom: 0;
-	left: 0;
-	opacity: 1;
-	padding: 30px;
-	background-color: #ffffffb7;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	align-self: flex-end;
-	height: 90vh;
-	transition: all 500ms;
-	z-index: 1000;
-	width: 80%;
-	transition: all 800ms;
-	backdrop-filter: blur(5px);
-	-webkit-backdrop-filter: blur(5px);
-}
+	header nav .mobile-menu {
+		transform: translatex(-100%);
+		position: fixed;
 
-.transition {
-	opacity: 0;
-}
+		bottom: 0;
+		left: 0;
+		opacity: 1;
+		padding: 30px;
+		background-color: #ffffffb7;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-self: flex-end;
+		height: 90vh;
+		transition: all 500ms;
+		z-index: 1000;
+		width: 80%;
+		transition: all 800ms;
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+	}
+	header nav .mobile-menu.show {
+		transform: translatex(0%);
+		height: 90vh;
+		position: fixed;
 
+		bottom: 0;
+		left: 0;
+		opacity: 1;
+		padding: 30px;
+		background-color: #ffffffb7;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-self: flex-end;
+		height: 90vh;
+		transition: all 500ms;
+		z-index: 1000;
+		width: 80%;
+		transition: all 800ms;
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+	}
 
-.hamburger-menu {
-	position: absolute;
-	right: 0;
-	top: 0;
+	.transition {
+		opacity: 0;
+	}
 
-	z-index: 10000000000;
-}
-.hamburger-menu span {
-	display: block;
-	width: 30px;
-	height: 3px;
-	background-color: #000;
-	margin: 5px 0;
-}
+	.hamburger-menu {
+		position: absolute;
+		right: 0;
+		top: 0;
 
+		z-index: 10000000000;
+	}
+	.hamburger-menu span {
+		display: block;
+		width: 30px;
+		height: 3px;
+		background-color: #000;
+		margin: 5px 0;
+	}
 
 	/* header #header {
 		padding: 5px 20px;
@@ -393,7 +335,6 @@ header nav .mobile-menu.show {
 
 /********Footer*********/
 footer {
-	
 	background-color: #1d1d1d;
 	padding: 50px 5%;
 }
@@ -401,7 +342,6 @@ footer {
 footer p {
 	color: #fff;
 }
-
 
 @media (max-width: 768px) {
 	h1,
@@ -417,13 +357,13 @@ footer p {
 		line-height: 3.1rem;
 	}
 
-	h2{
+	h2 {
 		font-weight: 600;
 		font-size: 2rem;
 		line-height: 2.9rem;
 	}
 
-	p{
+	p {
 		font-size: 15px;
 	}
 
@@ -447,8 +387,6 @@ footer p {
 		display: block;
 	}
 
-	
-
 	footer {
 		min-height: 0vh;
 		background-color: #1d1d1d;
@@ -456,20 +394,5 @@ footer p {
 		display: grid;
 		grid-template-columns: 1fr;
 		text-align: center;
-	}
-}
-
-
-/* Add CSS animation to the header */
-header {
-	animation: fadeIn 1500ms;
-}
-/* Keyframe animation for the fade-in effect */
-@keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
 	}
 }

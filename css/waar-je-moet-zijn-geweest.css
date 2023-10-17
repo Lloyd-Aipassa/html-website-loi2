@@ -1,3 +1,13 @@
+/***** Variabelen *****/
+
+:root {
+	--bg-white: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fff, #fff);
+	--bg-pink: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#fbe8de, #fbe8de);
+	--bg-blue: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png), linear-gradient(#e1eaf4, #e1eaf4);
+}
+
+/***** Hero *****/
+
 #plekken-die-je-gezien-moet-hebben {
 	position: relative;
 	width: 100%;
@@ -56,6 +66,8 @@
 	align-self: center;
 }
 
+/***** main container *****/
+
 .container {
 	max-width: 1600px;
 	padding: 50px;
@@ -70,38 +82,36 @@
 	margin-bottom: 10px;
 }
 
+/***** containers *****/
+
 #central-park {
 	grid-area: one;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#fff, #fff);
+	background-image: var(--bg-white);
 	box-shadow: rgba(236, 232, 232, 0.2) 0px 2px 8px 0px;
 }
 #empire-state {
 	grid-area: two;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#fbe8de, #fbe8de);
+	background-image: var(--bg-pink);
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #het-vrijheidsbeeld {
 	grid-area: three;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#e1eaf4, #e1eaf4);
+	background-image: var(--bg-blue);	
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #broadway {
 	grid-area: four;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#fbe8de, #fbe8de);
+	background-image: var(--bg-pink);
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 #stand-up-comedy {
 	grid-area: five;
-	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
-		linear-gradient(#fff, #fff);
+	background-image: var(--bg-white);
 	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+/***** css foto's *****/
 .img-container {
 	width: 100%;
 	height: 400px;
@@ -119,10 +129,16 @@ img {
 	width: 100%;
 }
 
+
+
+/***** css content-container *****/
 .content-container {
 	padding: 50px;
 }
 
+
+
+/***** css knop *****/
 .content-lekker-eten a {
 	color: black;
 	background-color: #ffffff00;
@@ -131,7 +147,7 @@ img {
 	border-radius: 25px;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1440px) {
 	.container {
 		max-width: 1200px;
 		margin: 0 auto;
