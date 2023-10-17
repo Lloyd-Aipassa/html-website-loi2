@@ -356,7 +356,7 @@ q {
 		grid-template-areas:
 			"two"
 			"one";
-		padding: 0px 24px 24px;
+		padding: 0px 24px 2px;
 		margin: 0;
 	}
 

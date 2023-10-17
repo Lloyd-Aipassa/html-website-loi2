@@ -1,0 +1,239 @@
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+	display: grid;
+	gap: 15px;
+	margin-top: 15px;
+	grid-auto-columns: 1fr;
+	grid-template-areas:
+		"one one one two two two"
+		"three three four four five five";
+	margin-bottom: 10px;
+}
+
+#plekken-die-je-gezien-moet-hebben {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	background-image: url("/images/NewYork/NY-food-hero.webp");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: bottom;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	align-content: center;
+}
+
+#plekken-die-je-gezien-moet-hebben::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: #00000056;
+	z-index: 2;
+}
+
+.hero {
+	position: relative;
+	max-width: 1200px;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 5%;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.blur {
+	z-index: 3;
+	border-radius: 20px;
+	padding: 35px;
+}
+.hero p {
+	position: relative;
+	max-width: 550px;
+	border-radius: 8px;
+	align-self: center;
+	z-index: 4;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+}
+
+.hero h1 {
+	max-width: 1050px;
+	color: #fff;
+	text-shadow: 2px 2px 2px #000;
+	z-index: 4;
+	align-self: center;
+}
+
+#central-park {
+	grid-area: one;
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
+	box-shadow: rgba(236, 232, 232, 0.2) 0px 2px 8px 0px;
+}
+#empire-state {
+	grid-area: two;
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fbe8de, #fbe8de);
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#het-vrijheidsbeeld {
+	grid-area: three;
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#e1eaf4, #e1eaf4);
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#broadway {
+	grid-area: four;
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fbe8de, #fbe8de);
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#stand-up-comedy {
+	grid-area: five;
+	background-image: url(https://assets.website-files.com/5837424ae11409586f837994/61195e21f792d7065d2f56ad_noise.png),
+		linear-gradient(#fff, #fff);
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.img-container {
+	width: 100%;
+	height: 400px;
+}
+#het-vrijheidsbeeld .img-container,
+#stand-up-comedy .img-container,
+#broadway .img-container {
+	width: 100%;
+	height: 500px;
+}
+
+img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+/* picture {
+	align-self: stretch;
+} */
+
+/* #empire-state p,
+#bernardin p,
+#momofuku p,
+#Katz p,
+#peter-luger p {
+	color: #000;
+	max-width: 600px;
+	margin: 15px 0 34px;
+} */
+
+.content-container {
+	padding: 50px;
+}
+
+.content-lekker-eten a {
+	color: black;
+	background-color: #ffffff00;
+	padding: 15px 50px;
+	border: 1px solid black;
+	border-radius: 25px;
+}
+
+@media (max-width: 1240px) {
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+	.container {
+		display: grid;
+		gap: 15px;
+		margin-top: 15px;
+		grid-auto-columns: 1fr;
+		grid-template-areas:
+			"one one one two two two"
+			"three three three four four four"
+			"five five five five five five";
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 720px) {
+	#plekken-die-je-gezien-moet-hebben {
+		min-height: 60vh;
+	}
+
+	#plekken-die-je-gezien-moet-hebben::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background-color: #00000056;
+		z-index: 2;
+	}
+
+	.hero {
+		align-content: center;
+		max-width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: center;
+		text-align: center;
+		margin-bottom: 5%;
+		gap: 35px;
+	}
+	.hero {
+		align-content: center;
+		max-width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-items: start;
+		text-align: center;
+		margin-bottom: 5%;
+		gap: 35px;
+	}
+	.hero h1 {
+		font-size: 30px;
+		line-height: 105%;
+		margin-bottom: -50px;
+	}
+
+	.hero p {
+		position: relative;
+		max-width: 550px;
+		border-radius: 8px;
+		align-self: center;
+		z-index: 4;
+		color: #fff;
+		text-shadow: 2px 2px 2px #000;
+	}
+
+	.container {
+		display: grid;
+		padding: 25px;
+		gap: 25px;
+		margin-top: 15px;
+		grid-auto-columns: 1fr;
+		grid-template-areas:
+			"one"
+			"two"
+			"three"
+			"four"
+			"five";
+		margin-bottom: 10px;
+	}
+	.content-container {
+		padding: 25px;
+	}
+}
